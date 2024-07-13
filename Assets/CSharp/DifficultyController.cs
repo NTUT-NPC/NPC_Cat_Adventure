@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 using DG.Tweening;
 
-public class DifficultyController : MonoBehaviour
-{
+public class DifficultyController : MonoBehaviour {
     public Image difficultyBackground;
+
     // public Button easyButton;
     public Button normalButton;
     public Button hardButton;
@@ -23,10 +21,11 @@ public class DifficultyController : MonoBehaviour
 
     // private Text easyButtonText;
     private Text normalButtonText;
+
     private Text hardButtonText;
+
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         // easyButtonText = easyButton.GetComponentInChildren<Text>();
         normalButtonText = normalButton.GetComponentInChildren<Text>();
         hardButtonText = hardButton.GetComponentInChildren<Text>();
@@ -41,8 +40,7 @@ public class DifficultyController : MonoBehaviour
         hardButtonText.DOFade(0, 0);
     }
 
-    public void PressStartButton()
-    {
+    public void PressStartButton() {
         // easyButton.interactable = true;
         normalButton.interactable = true;
         hardButton.interactable = true;
@@ -55,15 +53,11 @@ public class DifficultyController : MonoBehaviour
         // easyButtonText.DOFade(1, 0);
         normalButtonText.DOFade(1, 0);
         hardButtonText.DOFade(1, 0);
-        
     }
 
-    public void PressAchievementButton()
-    {
-        SceneManager.LoadScene(3, LoadSceneMode.Single);
-    }
-    public void PressReturnButton()
-    {
+    public void PressAchievementButton() { SceneManager.LoadScene(3, LoadSceneMode.Single); }
+
+    public void PressReturnButton() {
         // easyButton.interactable = false;
         normalButton.interactable = false;
         hardButton.interactable = false;
@@ -76,56 +70,46 @@ public class DifficultyController : MonoBehaviour
         hardButtonText.DOFade(0, 0);
         normalButtonText.DOFade(0, 0);
     }
+
     // public void PointEasyButton()
     // {
     //     if(easyButton.interactable == true)
     //     {
     //          tipsText.DOColor(Color.green, 0);
-    //          tipsText.text = "Â²³æ¡I¦pªG§A¦³ª`·N¿ï¶µªº¸Ü¡K¡K";
+    //          tipsText.text = "ç°¡å–®ï¼å¦‚æœä½ æœ‰æ³¨æ„é¸é …çš„è©±â€¦â€¦";
     //      }
     // }
-    public void PointNormalButton()
-    {
-        if(normalButton.interactable == true)
-        {
+    public void PointNormalButton() {
+        if (normalButton.interactable == true) {
             tipsText.DOColor(Color.yellow, 0);
-            tipsText.text = "´¶´¶³q³q¡Aµy·L«ä¦Ò¤@¤U¤]¯à°÷³qÃö°Õ¡C";
+            tipsText.text = "æ™®æ™®é€šé€šï¼Œç¨å¾®æ€è€ƒä¸€ä¸‹ä¹Ÿèƒ½å¤ é€šé—œå•¦ã€‚";
         }
     }
-    public void PointHardButton()
-    {
-        if(hardButton.interactable == true)
-        {
+
+    public void PointHardButton() {
+        if (hardButton.interactable == true) {
             tipsText.DOColor(Color.red, 0);
-            tipsText.text = "·¥«×§xÃø¡I«D°ª¤â¤Å»´©ö¶i¤J¡I";
+            tipsText.text = "æ¥µåº¦å›°é›£ï¼éé«˜æ‰‹å‹¿è¼•æ˜“é€²å…¥ï¼";
         }
     }
-    public void PointOutButton()
-    {
-        tipsText.text = "";
-    }
+
+    public void PointOutButton() { tipsText.text = ""; }
 
     // public void PressEasyButton()
     // {
     //     PlayerPrefs.SetString("Drama", "Drama/Easy");
     //     SendMessage("PressButton");
     // }
-    public void PressNormalButton()
-    {
+    public void PressNormalButton() {
         PlayerPrefs.SetString("Drama", "Drama/Normal");
         SendMessage("PressButton");
     }
-    public void PressHardButton()
-    {
+
+    public void PressHardButton() {
         PlayerPrefs.SetString("Drama", "Drama/Hard");
         SendMessage("PressButton");
     }
-    void PressButton()
-    {
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
-    }
-    public void PressGitHubButton()
-    {
-        Application.OpenURL("https://github.com/itaouo/NPC_Cat_Adventure");
-    }
+
+    void PressButton() { SceneManager.LoadScene(2, LoadSceneMode.Single); }
+    public void PressGitHubButton() { Application.OpenURL("https://github.com/itaouo/NPC_Cat_Adventure"); }
 }

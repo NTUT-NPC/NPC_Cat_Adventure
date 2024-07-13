@@ -18,35 +18,35 @@ public class CharacterController : MonoBehaviour
         string path = "Character/" + picture;
         if(picture == "clean")
         {
-            character2.sprite = Resources.Load<Sprite>("³z©ú");
+            character2.sprite = Resources.Load<Sprite>("é€æ˜");
         }
         if (picture == "cleanAll")
         {
-            character1.sprite = Resources.Load<Sprite>("³z©ú");
-            character2.sprite = Resources.Load<Sprite>("³z©ú");
+            character1.sprite = Resources.Load<Sprite>("é€æ˜");
+            character2.sprite = Resources.Load<Sprite>("é€æ˜");
         }
-        else if (title == "¡i³qª¾¡j")
+        else if (title == "ã€é€šçŸ¥ã€‘")
         {
-            if (character2.sprite.name != "³z©ú")
+            if (character2.sprite.name != "é€æ˜")
             {
                 character2.DOColor(Color.grey, 1).SetUpdate(true);
             }
-            if (character1.sprite.name != "³z©ú")
+            if (character1.sprite.name != "é€æ˜")
             {
                 character1.DOColor(Color.white, 1).SetUpdate(true);
             }
         }
-        else if (title == "¡i®Ç¥Õ¡j" || title == "¡i¤p N¡j" || title == "¡i§Ú¡j")
+        else if (title == "ã€æ—ç™½ã€‘" || title == "ã€å° Nã€‘" || title == "ã€æˆ‘ã€‘")
         {       
             if (!(picture == "" || picture == "clean"))
             {
                 character1.sprite = Resources.Load<Sprite>(path);
             }
-            if (character1.sprite.name != "³z©ú")
+            if (character1.sprite.name != "é€æ˜")
             {
                 character1.DOColor(Color.white, 1).SetUpdate(true);
             }
-            if (character2.sprite.name != "³z©ú")
+            if (character2.sprite.name != "é€æ˜")
             {
                 character2.DOColor(Color.grey, 1);
             }
@@ -57,26 +57,26 @@ public class CharacterController : MonoBehaviour
             {   
                 character2.sprite = Resources.Load<Sprite>(path);
             }
-            if (character2.sprite.name != "³z©ú")
+            if (character2.sprite.name != "é€æ˜")
             {
                 character2.DOColor(Color.white, 1).SetUpdate(true); 
             }
-            if (character1.sprite.name != "³z©ú")
+            if (character1.sprite.name != "é€æ˜")
             {
                 character1.DOColor(Color.grey, 1);
             }
         }
-        //else if (title == "¡iBOSS¡j")
+        //else if (title == "ã€BOSSã€‘")
         //{
         //    if (!(picture == "" || picture == "clean"))
         //    {
         //        character1.sprite = Resources.Load<Sprite>(path);
         //    }
-        //    if (character1.sprite.name != "³z©ú")
+        //    if (character1.sprite.name != "é€æ˜")
         //    {
         //        character1.DOColor(Color.white, 1).SetUpdate(true);
         //    }
-        //    if (character2.sprite.name != "³z©ú")
+        //    if (character2.sprite.name != "é€æ˜")
         //   {
         //        character2.DOColor(Color.white, 1);
         //   }

@@ -3,15 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using System.Globalization;
-
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-
 using DG.Tweening;
 
-public class PictureController : MonoBehaviour
-{
+public class PictureController : MonoBehaviour {
     public Image background_Image;
     public Transform background_Transform;
     public Image mask;
@@ -26,8 +23,7 @@ public class PictureController : MonoBehaviour
 
     List<string> itemList;
 
-    void Start()
-    {
+    void Start() {
         HPScale = 1F;
         HPBar.fillAmount = HPScale;
         HP.DOFade(0, 0f);
@@ -35,115 +31,93 @@ public class PictureController : MonoBehaviour
         itemList = new List<string>();
     }
 
-    IEnumerator Background(string[] arr)
-    {
+    IEnumerator Background(string[] arr) {
         string picture = arr[2];
 
-        if (arr[1] == "Before End")
-        {
+        if (arr[1] == "Before End") {
             yield return new WaitForSeconds(0.8f);
             background_Transform.DOScale(background_Transform.localScale * 5, 1f);
             mask.DOFade(1, 1f);
         }
-        else if (arr[1] == "End")
-        {   
+        else if (arr[1] == "End") {
             background_Transform.DOScale(background_Transform.localScale / 5, 0f);
             mask.DOFade(0, 2f);
         }
-        else if (arr[1] == "Game Over")
-        {
+        else if (arr[1] == "Game Over") {
             gameOverText.DOFade(1, 0f);
             gameOver_Transform.DOMoveY(770, 1f, true);
             gameOver_Transform.DOScale(gameOver_Transform.localScale * 3, 1f);
         }
-        else if (arr[1] != "Skip Animation")
-        {
+        else if (arr[1] != "Skip Animation") {
             background_Image.DOColor(Color.black, 0.5f);
             yield return new WaitForSeconds(0.5f);
         }
 
-        if (!(arr[1] == "BeforeEnd" || arr[1] == "End"))
-        {
+        if (!(arr[1] == "BeforeEnd" || arr[1] == "End")) {
             background_Image.sprite = Resources.Load<Sprite>("Background/" + picture);
             background_Image.DOColor(Color.white, 0.5f);
         }
-        else if(arr[1] == "End")
-        {
+        else if (arr[1] == "End") {
             background_Image.sprite = Resources.Load<Sprite>("Background/" + picture);
             background_Image.DOColor(Color.white, 0f);
         }
-        
     }
 
-    void Dialogue(string[] arr)
-    {
+    void Dialogue(string[] arr) {
         string title = arr[0];
         string content = arr[1];
         string picture = arr[2];
 
-        if (arr[0] == "°i≥q™æ°j" && picture != "")
-        {   
+        if (arr[0] == "„ÄêÈÄöÁü•„Äë" && picture != "") {
             item.sprite = Resources.Load<Sprite>("Item/" + picture);
-            if (itemList.Contains(picture))
-            {
+            if (itemList.Contains(picture)) {
                 itemList.Remove(picture);
             }
-            else
-            {
-                if (picture == "∂ÏΩ¶µwπÙ")
-                {
-                    itemList.Remove("∂ÏΩ¶≈KªsµwπÙ");
-                    itemList.Add("≈KªsµwπÙ");
+            else {
+                if (picture == "Â°ëËÜ†Á°¨Âπ£") {
+                    itemList.Remove("Â°ëËÜ†ÈêµË£ΩÁ°¨Âπ£");
+                    itemList.Add("ÈêµË£ΩÁ°¨Âπ£");
                 }
-                else if (picture == "≈KªsµwπÙ")
-                {
-                    itemList.Remove("∂ÏΩ¶≈KªsµwπÙ");
-                    itemList.Add("∂ÏΩ¶µwπÙ");
+                else if (picture == "ÈêµË£ΩÁ°¨Âπ£") {
+                    itemList.Remove("Â°ëËÜ†ÈêµË£ΩÁ°¨Âπ£");
+                    itemList.Add("Â°ëËÜ†Á°¨Âπ£");
                 }
-                else
-                {
+                else {
                     itemList.Add(picture);
                 }
-
             }
-            
         }
-        else
-        {
-            item.sprite = Resources.Load<Sprite>("≥z©˙");
+        else {
+            item.sprite = Resources.Load<Sprite>("ÈÄèÊòé");
         }
-        if (title == "°iBOSS •X≤{°j")
-        {
+
+        if (title == "„ÄêBOSS Âá∫Áèæ„Äë") {
             HP.DOFade(1, 0f);
             HPBar.DOFade(1, 0f);
         }
     }
 
-    void ChooseItem(string[] arr)
-    {
-        if (HPScale <= 0 || itemList.Count == 0)
-        {
+    void ChooseItem(string[] arr) {
+        if (HPScale <= 0 || itemList.Count == 0) {
             HP.DOFade(0, 0f);
             HPBar.DOFade(0, 0f);
             arr[0] = arr[1];
             arr[1] = "0";
             SendMessage("ChangePath", arr);
         }
-        else
-        {
-            for(int i = 1; i <= itemList.Count; i++)
-            {   
-                if (i == 5)
-                {
+        else {
+            for (int i = 1; i <= itemList.Count; i++) {
+                if (i == 5) {
                     break;
                 }
+
                 arr[0] = itemList[i - 1];
                 SendMessage("Option" + i.ToString(), arr);
             }
         }
     }
-    void HPminus(string[] arr)
-    {
+
+    void HPminus(string[] arr) {
         HPScale -= Convert.ToSingle(arr[1]);
         HPBar.DOFillAmount(HPScale, 3f);
     }
