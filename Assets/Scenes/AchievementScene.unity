@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +134,7 @@ GameObject:
   - component: {fileID: 26758972}
   - component: {fileID: 26758971}
   m_Layer: 5
-  m_Name: Text1
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,19 +508,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 579104131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2098446249}
-        m_TargetAssemblyTypeName: AchieveController, Assembly-CSharp
-        m_MethodName: ReturnButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &579104131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,7 +638,7 @@ GameObject:
   - component: {fileID: 1014327123}
   - component: {fileID: 1014327122}
   m_Layer: 5
-  m_Name: Text2
+  m_Name: CautionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1445,7 +1432,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2098446249}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AchieveController, Assembly-CSharp
         m_MethodName: ProducerButtonPress
         m_Mode: 1
@@ -1506,7 +1493,6 @@ GameObject:
   - component: {fileID: 2040146476}
   - component: {fileID: 2040146478}
   - component: {fileID: 2040146477}
-  - component: {fileID: 2040146479}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1571,18 +1557,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040146475}
   m_CullTransparentMesh: 1
---- !u!114 &2040146479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040146475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9f134351167c0b4685e71d513f62f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2089208808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1648,7 @@ GameObject:
   - component: {fileID: 2090151506}
   - component: {fileID: 2090151505}
   - component: {fileID: 2090151504}
+  - component: {fileID: 2090151508}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1770,6 +1745,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2090151508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090151503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74975b393243425591b156535ef801ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - {fileID: 1899479065}
+  - {fileID: 585702972}
+  - {fileID: 1752846680}
+  - {fileID: 1771825261}
+  - {fileID: 1953824569}
+  - {fileID: 2089208810}
+  - {fileID: 289543244}
+  - {fileID: 1080800043}
+  - {fileID: 435302672}
+  - {fileID: 26758971}
+  idText: {fileID: 1029584284}
+  returnButton: {fileID: 579104130}
+  producerButton: {fileID: 1955181155}
 --- !u!1 &2098446246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,7 +1781,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2098446247}
   - component: {fileID: 2098446248}
-  - component: {fileID: 2098446249}
   m_Layer: 5
   m_Name: TextParent
   m_TagString: Untagged
@@ -1821,20 +1821,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098446246}
   m_CullTransparentMesh: 1
---- !u!114 &2098446249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098446246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6247592455f227b4d9372badd0af23d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextParent: {fileID: 2098446246}
-  IDText: {fileID: 1029584284}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
