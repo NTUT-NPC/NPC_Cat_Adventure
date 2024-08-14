@@ -28,6 +28,8 @@ namespace CSharp.Scene {
         private static Dictionary<Character, Image> characterDict;
 
         private bool isLooping = false;
+        private HealthController hc = HealthController.Instance;
+        private CardController cc = CardController.Instance;
 
         public void StartLoopingImage() {
             if (!isLooping) {
