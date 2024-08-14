@@ -13,6 +13,6 @@ namespace CSharp.Util {
             SceneManager.LoadScene("Scenes/" + gs, mode);
         }
 
-        public static void OpenGithubPage() { Application.OpenURL("https://github.com/itaouo/NPC_Cat_Adventure"); }
+        public static void OpenGithubPage() { Application.OpenURL("https://github.com/NTUT-NPC/NPC_Cat_Adventure"); }
     }
 }
