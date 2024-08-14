@@ -5,6 +5,10 @@ namespace CSharp.Controller {
     public class CardController {
         private List<Card> cards;
         private static CardController _instance;
+        
+        private CardController() {
+            cards = new List<Card>();
+        }
 
         public static CardController Instance {
             get { return _instance ??= new CardController(); }
