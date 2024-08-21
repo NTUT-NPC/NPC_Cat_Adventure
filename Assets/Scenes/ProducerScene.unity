@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -213,6 +214,7 @@ GameObject:
   - component: {fileID: 252050974}
   - component: {fileID: 252050973}
   - component: {fileID: 252050972}
+  - component: {fileID: 252050971}
   m_Layer: 5
   m_Name: GitHubButton
   m_TagString: Untagged
@@ -239,6 +241,18 @@ RectTransform:
   m_AnchoredPosition: {x: -727, y: -448}
   m_SizeDelta: {x: 132, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &252050971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252050969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5980eed35e4edd42a54f9f0a55fe9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &252050972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +297,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 252050971}
         m_TargetAssemblyTypeName: ProducerController, Assembly-CSharp
         m_MethodName: GitHubButtonPress
         m_Mode: 1
@@ -413,6 +427,7 @@ GameObject:
   - component: {fileID: 579104132}
   - component: {fileID: 579104131}
   - component: {fileID: 579104130}
+  - component: {fileID: 579104133}
   m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
@@ -483,7 +498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 579104133}
         m_TargetAssemblyTypeName: ProducerController, Assembly-CSharp
         m_MethodName: ReturnButtonPress
         m_Mode: 1
@@ -533,6 +548,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579104128}
   m_CullTransparentMesh: 1
+--- !u!114 &579104133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579104128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5980eed35e4edd42a54f9f0a55fe9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1014327120
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +744,7 @@ GameObject:
   - component: {fileID: 2040146476}
   - component: {fileID: 2040146478}
   - component: {fileID: 2040146477}
+  - component: {fileID: 2040146479}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -781,6 +809,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040146475}
   m_CullTransparentMesh: 1
+--- !u!114 &2040146479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040146475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f134351167c0b4685e71d513f62f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2090151503
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +833,6 @@ GameObject:
   - component: {fileID: 2090151506}
   - component: {fileID: 2090151505}
   - component: {fileID: 2090151504}
-  - component: {fileID: 2090151508}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -888,20 +927,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2090151508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090151503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1e1d5015554807abe4d98fe1a61c2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  returnButton: {fileID: 579104130}
-  gitHubButton: {fileID: 252050972}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
