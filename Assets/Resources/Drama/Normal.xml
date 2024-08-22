@@ -451,39 +451,42 @@
 		<ChooseItem>End1</ChooseItem>
 		<Option name="一支火把">
 			<Dialogue name="【通知】" pic="一支火把">你選擇使用「熄滅的火把」。</Dialogue>
-			<HPminus>0.5</HPminus>
+			<HPminusBoss>0.15</HPminusBoss>
 			<Dialogue name="【BOSS】">你用盡全力扔出那支火把，佛地魔被餘熱稍微燙到，HP-30。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">佛地魔使用法力反擊你，你暈了，你 HP-100。</Dialogue>
+			<ChangePath name ="Boss1">5</ChangePath>
 		</Option>
-		<Option name="bonk 柴犬">
-			<Dialogue name="【通知】" pic="bonk 柴犬">你選擇使用「bonk 柴犬」。</Dialogue>
-			<HPminus>0.5</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻柴柴，柴柴使用 Bonk 攻擊，佛地魔受到物理攻擊，因腦震盪 HP -50。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
+		<Option name="暴風圈">
+			<Dialogue name="【通知】" pic="暴風圈">你選擇使用「暴風圈」。</Dialogue>
+			<HPminusBoss>0.9</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出暴風圈。頓時狂風暴雨，佛地魔無地反擊。被大自然打敗的他 HP-180。</Dialogue>
+			<ChangePath name ="Boss1">5</ChangePath>
+		</Option>
+		<Option name="颱風眼">
+			<Dialogue name="【通知】" pic="颱風眼">你選擇使用「颱風眼」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出颱風眼。颱風中心無風無雨，天氣晴朗。HP-0。</Dialogue>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">因為你耍了佛地魔，他展開魔鬼般的魔法攻擊。你 HP-200。</Dialogue>
+			<ChangePath name ="GameoverScene"></ChangePath>
+		</Option>
+		<Option name="尼斯湖水怪的精髓">
+			<Dialogue name="【通知】" pic="尼斯湖水怪的精髓">你選擇使用「尼斯湖水怪的精髓」。</Dialogue>
+			<Shield></Shield>
+			<Dialogue name="【BOSS】">你丟出了那隻死掉的水怪。在你身上產生了水怪的抗體，抵抗敵人的一次攻擊。</Dialogue>
+			<ChangePath name ="Boss1">5</ChangePath>
+		</Option>
+		<Option name="寶典祕笈">
+			<Dialogue name="【通知】" pic="寶典祕笈">你選擇使用「寶典祕笈」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出了寶典祕笈。佛地魔瞬間被凱米與中央山脈的愛情史給迷住了。</Dialogue>
+			<HPminusBoss>0.05</HPminusBoss>
+			<Dialogue name="【旁白】">佛地魔此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<ChangePath name ="Boss1">5</ChangePath>
 		</Option>
 		<Option name="一條會旋轉的魚">
 			<Dialogue name="【通知】" pic="一條會旋轉的魚">你選擇使用「一條會旋轉的魚」。</Dialogue>
-			<HPminus>0.5</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻神奇的魚，滑滑黏黏的觸感令你不寒而慄，佛地魔受到精神加洗腦攻擊，HP -50。</Dialogue>
-
-			<ChangePath name ="Boss1">6</ChangePath>
-		</Option>
-		<Option name="三枚硬幣">
-			<Dialogue name="【通知】" pic="三枚硬幣">你選擇使用「三枚硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出那三枚硬幣，掉出一支上上籤，上面寫著「愛情來了」。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
-		</Option>
-		<Option name="塑膠硬幣">
-			<Dialogue name="【通知】" pic="塑膠硬幣">你選擇使用「塑膠硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出塑膠硬幣，出現了告示牌，上面寫「禁止隨手扔垃圾」。</Dialogue>
-			<HPminus>0.05</HPminus>
-			<Dialogue name="【旁白】">生灰的告示牌舉起時，引出了一些粉塵，對佛地魔造成眼睛傷害，HP -5。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
-		</Option>
-		<Option name="鐵製硬幣">
-			<Dialogue name="【通知】" pic="鐵製硬幣">你選擇使用「鐵製硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出鐵製硬幣，掉出一支上籤，上面寫著「加入NPC，四年畢業不是問題」。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+			<Dialogue name="【BOSS】">你丟出了旋轉魚。佛地魔看著那隻魚，頭暈了過去。</Dialogue>
+			<ChangePath name ="Boss1">5</ChangePath>
 		</Option>
 	</Boss1>
 
@@ -501,38 +504,54 @@
 		<Background pic = "繼續前行"></Background>
 		<Dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</Dialogue>
 		<Background pic = "全黑"></Background>
-		<Dialogue name="【旁白】">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是傑哥。</Dialogue>
+		<Dialogue name="【旁白】">忽然火把熄滅，四周變得異常安靜，轉眼間有個人出現在你們面前，正是傑哥。</Dialogue>
 		<Dialogue name="【BOSS 出現】" pic="傑哥">傑哥出現了 ！</Dialogue>
 		<Dialogue name="【通知】">查看背包中的可使用道具</Dialogue>
 		<ChooseItem>End2</ChooseItem>
-		<Option name="一支壞掉的手電筒">
-			<Dialogue name="【通知】" pic="一支壞掉的手電筒">你選擇使用「一支壞掉的手電筒」。</Dialogue>
-			<HPminus>0.3</HPminus>
-			<Dialogue name="【BOSS】">你用盡全力扔出那支手電筒，傑哥因體積過大無法閃避，HP -30。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+		<Option name="一支火把">
+			<Dialogue name="【通知】" pic="一支火把">你選擇使用「熄滅的火把」。</Dialogue>
+			<HPminusBoss>0.4</HPminusBoss>
+			<Dialogue name="【BOSS】">你用盡全力扔出那支火把，傑哥過於龐大被打中，加上火把的餘溫燙傷，HP-80。</Dialogue>
+			<HPminusMy>0.15</HPminusMy>
+			<Dialogue name="【BOSS】">他喊著不要，你耳鳴，你HP-30。</Dialogue>
+			<ChangePath name ="Boss2">5</ChangePath>
 		</Option>
-		<Option name="阿偉的阿罵">
-			<Dialogue name="【通知】" pic="阿偉的阿罵">你選擇使用「阿偉的阿罵」。</Dialogue>
-			<HPminus>0.9</HPminus>
-			<Dialogue name="【BOSS】">你請出阿偉的阿罵，阿罵發動碎碎念攻擊，對傑哥造成精神上不可逆的傷害，HP -90，他大喊阿罵不要。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+		<Option name="暴風圈">
+			<Dialogue name="【通知】" pic="暴風圈">你選擇使用「暴風圈」。</Dialogue>
+			<HPminusBoss>0.9</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出暴風圈。頓時狂風暴雨，傑哥無地反擊。被大自然打敗的他 HP-180。</Dialogue>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">他大聲地喊著不要，你耳膜快破了，你HP-100。</Dialogue>
+			<ChangePath name ="Boss2">5</ChangePath>
 		</Option>
-		<Option name="鐵製硬幣">
-			<Dialogue name="【通知】" pic="鐵製硬幣">你選擇使用「鐵製硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出鐵製硬幣，掉出一支上籤，上面寫著「加入NPC，四年畢業不是問題」。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+		<Option name="颱風眼">
+			<Dialogue name="【通知】" pic="颱風眼">你選擇使用「颱風眼」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出颱風眼。颱風中心無風無雨，天氣晴朗。什麼事都沒發生。</Dialogue>
+			<ChangePath name ="Boss2">5</ChangePath>
 		</Option>
-		<Option name="塑膠硬幣">
-			<Dialogue name="【通知】" pic="塑膠硬幣">你選擇使用「塑膠硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出塑膠硬幣，出現了告示牌，上面寫著「禁止隨手扔垃圾」。</Dialogue>
-			<HPminus>0.05</HPminus>
-			<Dialogue name="【BOSS】">生灰的告示牌舉起時，引出了一些粉塵，對傑哥造成眼睛傷害，HP -5。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+		<Option name="水泥碎片">
+			<Dialogue name="【通知】" pic="水泥碎片">你選擇使用「水泥碎片」。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出了水泥碎片。銳利的邊緣刮破了傑哥的肚皮，砰的一聲，肚子爆炸。HP-200。</Dialogue>
+			<ChangePath name ="Boss2">5</ChangePath>
 		</Option>
-		<Option name="bonk 柴犬">
-			<Dialogue name="【通知】" pic="bonk 柴犬">你選擇使用「bonk 柴犬」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出那隻柴柴，柴柴無法使用 Bonk 攻擊，因為那根棒球棍已經成為了湖水的橋，只能賣萌，HP -0。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+		<Option name="寶典祕笈">
+			<Dialogue name="【通知】" pic="寶典祕笈">你選擇使用「寶典祕笈」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出了寶典祕笈。傑哥瞬間被凱米與中央山脈的愛情史給迷住了。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">傑哥此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<ChangePath name ="Boss2">5</ChangePath>
+		</Option>
+		<Option name="阿偉的阿嬤">
+			<Dialogue name="【通知】" pic="阿偉的阿嬤">你選擇使用「阿偉的阿嬤」。</Dialogue>
+			<Dialogue name="【BOSS】">你派出了阿偉的阿嬤當擋箭牌。</Dialogue>
+			<Dialogue name="【阿嬤】">......</Dialogue>
+			<Dialogue name="【阿嬤】">擦欲系（吵死人），你。</Dialogue>
+			<HPminusBoss>0.75</HPminusBoss>
+			<Dialogue name="【BOSS】">傑哥被阿嬤突如其來的「教育」擊退數步。HP-150。</Dialogue>
+			<HPminusMy>0.6</HPminusMy>
+			<Dialogue name="【BOSS】">你被他阿嬤嚇到跌倒受傷，你 HP-120。</Dialogue>
+			<ChangePath name ="Boss2">5</ChangePath>
 		</Option>
 	</Boss2>
 
@@ -551,32 +570,52 @@
 		<Background pic = "繼續前行"></Background>
 		<Dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</Dialogue>
 		<Background pic = "全黑"></Background>
-		<Dialogue name="【旁白】" pic="小N_打boss">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是武藏與小次郎。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_打boss">忽然火把熄滅，四周音樂大響，嘈雜中有個人出現在你們面前，正是武藏與小次郎。</Dialogue>
 		<Dialogue name="【BOSS 出現】" pic="武藏與小次郎">武藏與小次郎出現了 ！</Dialogue>
 		<Dialogue name="【通知】">查看背包中的可使用道具</Dialogue>
 		<ChooseItem>End3</ChooseItem>
-		<Option name="一支壞掉的手電筒">
-			<Dialogue name="【通知】" pic="一支壞掉的手電筒">你選擇使用「一支壞掉的手電筒」。</Dialogue>
-			<Dialogue name="【BOSS】">你用盡全力扔出那支手電筒，武藏與小次郎發動閃避功能，HP -0。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+		<Option name="一支火把">
+			<Dialogue name="【通知】" pic="一支火把">你選擇使用「熄滅的火把」。</Dialogue>
+			<Dialogue name="【BOSS】">你用盡全力扔出熄滅的火把，武藏與小次郎發動閃避功能，HP-0。</Dialogue>
+			<HPminusMy>0.005</HPminusMy>
+			<Dialogue name="【BOSS】">武藏拿出一顆精靈球丟你，你 HP -1。</Dialogue>
+			<ChangePath name ="Boss3">5</ChangePath>
 		</Option>
 		<Option name="大肌肌 Ken">
-			<Dialogue name="【通知】" pic="大肌肌 Ken">你選擇使用「大肌肌 Ken」。</Dialogue>
-			<HPminus>0.7</HPminus>
-			<Dialogue name="【BOSS】">你請出大肌肌 Ken，Ken 曬出與 Barbie 的照片，愛是十萬伏特，滿滿的粉紅色泡泡對兩人造成精神攻擊，HP -70。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+			<Dialogue name="【通知】" pic="大肌肌 Ken">你選擇使用「塑膠大肌肌 Ken」。</Dialogue>
+			<HPminusBoss>0.4</HPminusBoss>
+			<Dialogue name="【BOSS】">你請出塑膠大肌肌，他曬出與皮諾丘冥婚的照片。武藏與小次郎被嚇到，精神傷害HP-80。</Dialogue>
+			<HPminusMy>0.35</HPminusMy>
+			<Dialogue name="【BOSS】">這時你卻被潛伏後方的喵貓用利爪攻擊，HP -70。</Dialogue>
+			<ChangePath name ="Boss3">5</ChangePath>
 		</Option>
-		<Option name="bonk 柴犬">
-			<Dialogue name="【通知】" pic="bonk 柴犬">你選擇使用「bonk 柴犬」。</Dialogue>
-			<HPminus>0.1</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻柴柴，柴柴使用 Bonk 攻擊，兩人再度發動閃避攻擊，但因閃避不完全，HP -10。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+		<Option name="紅包">
+			<Dialogue name="【通知】" pic="紅包">你選擇使用「紅包」。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">你默默地對著他們打開了紅包的開口，裡面的陰氣使得他們無法抵抗，HP-200。</Dialogue>
+			<ChangePath name ="Boss3">5</ChangePath>
+		</Option>
+		<Option name="戀愛腦的皮諾丘">
+			<Dialogue name="【通知】" pic="戀愛腦的皮諾丘">你選擇使用「戀愛腦的皮諾丘」。</Dialogue>
+			<Dialogue name="【BOSS】">你請出了戀愛腦的皮諾丘，他瘋狂地黏在塑膠大肌肌身上，什麼事也沒有發生。</Dialogue>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">武藏與小次郎看到這一幕有些"傻眼"，繞過就纏中的兩人過來個給你一拳，造成(HP-50*2)。</Dialogue>
+			<ChangePath name ="Boss3">5</ChangePath>
 		</Option>
 		<Option name="會尖叫的咖哩拌飯">
 			<Dialogue name="【通知】" pic="會尖叫的咖哩拌飯">你選擇使用「會尖叫的咖哩拌飯」。</Dialogue>
-			<HPminus>0.5</HPminus>
-			<Dialogue name="【BOSS】">你丟出那盒咖哩拌飯，咖哩拌飯發出雹哥的尖叫聲，兩人來不及遮住耳朵，故精神與耳膜受損，HP -50。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+			<HPminusBoss>0.6</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出那盒咖哩拌飯，咖哩拌飯發出雹哥的尖叫聲，兩人來不及摀住耳朵，故精神與耳膜受損，HP-120。</Dialogue>
+			<Dialogue name="【BOSS】">因為暫時性耳鳴，兩人並未反擊。</Dialogue>
+			<ChangePath name ="Boss3">5</ChangePath>
+		</Option>
+		<Option name="大香蕉">
+			<Dialogue name="【通知】" pic="大香蕉">你選擇使用「大香蕉」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出那根大香蕉。不知何來的神聖力量，香蕉長了手腳，在他們面前跳起舞。</Dialogue>
+			<Dialogue name="【BOSS】">武藏與小次郎被洗腦神曲吸引了，隨著旋律抖動起來。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">武藏與小次郎此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<ChangePath name ="Boss3">5</ChangePath>
 		</Option>
 		
 	</Boss3>

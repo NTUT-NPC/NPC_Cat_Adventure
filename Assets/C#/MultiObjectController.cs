@@ -74,7 +74,7 @@ public class MultiObjectController : MonoBehaviour
         string[] arr = {element.GetAttribute("name"), element.InnerText, element.GetAttribute("pic") };
         BroadcastMessage(element.Name, arr);
         
-        if (element.Name == "Background" || element.Name == "Option1" || element.Name == "Option2" || element.Name == "Option3" || element.Name == "Option4" || element.Name == "HPminus" || element.Name == "Achievement" || element.Name == "ChooseOption")
+        if (element.Name == "Background" || element.Name == "Option1" || element.Name == "Option2" || element.Name == "Option3" || element.Name == "Option4" || element.Name == "HPminusBoss" || element.Name == "HPminusMy" || element.Name == "Achievement" || element.Name == "ChooseOption" || element.Name == "Shield")
         {
             nextStandby = true;
             SendMessage("GetPressed", "");
@@ -85,7 +85,6 @@ public class MultiObjectController : MonoBehaviour
     void NextStandby()
     {
         nextStandby = true;
-        //Debug.Log("NextStandby");
     }
     
     void GetPressed(string obj)

@@ -16,23 +16,28 @@ public class PictureController : MonoBehaviour
     public Transform background_Transform;
     public Image mask;
     public Image item;
-    public Image HP;
-    public Image HPBar;
+    public Image HP_Boss;
+    public Image HPBar_Boss;
+    public Image HP_My;
+    public Image HPBar_My;
     public Text gameOverText;
     public Transform gameOver_Transform;
-    float HPScale = 1F;
+    float HPScale_Boss = 1F;
+    float HPScale_My = 1F;
 
     Color customColor = new Color(0.98f, 0.948f, 0.744f, 1.0f);
 
-    List<string> itemList;
 
     void Start()
     {
-        HPScale = 1F;
-        HPBar.fillAmount = HPScale;
-        HP.DOFade(0, 0f);
-        HPBar.DOFade(0, 0f);
-        itemList = new List<string>();
+        HPScale_Boss = 1F;
+        HPBar_Boss.fillAmount = HPScale_Boss;
+        HP_Boss.DOFade(0, 0f);
+        HPBar_Boss.DOFade(0, 0f);
+        HPScale_My = 1F;
+        HPBar_My.fillAmount = HPScale_My;
+        HP_My.DOFade(0, 0f);
+        HPBar_My.DOFade(0, 0f);
     }
 
     IEnumerator Background(string[] arr)
@@ -84,66 +89,10 @@ public class PictureController : MonoBehaviour
         if (title == "【通知】" && picture != "")
         {   
             item.sprite = Resources.Load<Sprite>("Item/" + picture);
-            if (itemList.Contains(picture))
-            {
-                itemList.Remove(picture);
-            }
-            else
-            {
-                if (picture == "塑膠硬幣")
-                {
-                    itemList.Remove("塑膠鐵製硬幣");
-                    itemList.Add("鐵製硬幣");
-                }
-                else if (picture == "鐵製硬幣")
-                {
-                    itemList.Remove("塑膠鐵製硬幣");
-                    itemList.Add("塑膠硬幣");
-                }
-                else
-                {
-                    itemList.Add(picture);
-                }
-
-            }
         }
         else
         {
             item.sprite = Resources.Load<Sprite>("透明");
         }
-        if (title == "【BOSS 出現】")
-        {
-            HP.DOFade(1, 0f);
-            HPBar.DOFade(1, 0f);
-        }
-    }
-
-    void ChooseItem(string[] arr)
-    {
-        if (HPScale <= 0 || itemList.Count == 0)
-        {
-            HP.DOFade(0, 0f);
-            HPBar.DOFade(0, 0f);
-            arr[0] = arr[1];
-            arr[1] = "0";
-            SendMessage("ChangePath", arr);
-        }
-        else
-        {
-            for(int i = 1; i <= itemList.Count; i++)
-            {   
-                if (i == 5)
-                {
-                    break;
-                }
-                arr[0] = itemList[i - 1];
-                SendMessage("Option" + i.ToString(), arr);
-            }
-        }
-    }
-    void HPminus(string[] arr)
-    {
-        HPScale -= Convert.ToSingle(arr[1]);
-        HPBar.DOFillAmount(HPScale, 3f);
     }
 }

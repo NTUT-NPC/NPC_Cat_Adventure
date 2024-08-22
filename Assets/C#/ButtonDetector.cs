@@ -14,7 +14,6 @@ public class ButtonDetector : MonoBehaviour
     private Text buttonText2;
     private Text buttonText3;
     private Text buttonText4;
-    private bool chooseItem = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +31,6 @@ public class ButtonDetector : MonoBehaviour
         buttonText2.text = "";
         buttonText3.text = "";
         buttonText4.text = "";
-
-        chooseItem = false;
-
     }
 
     void Option1(string[] arr)
@@ -61,14 +57,6 @@ public class ButtonDetector : MonoBehaviour
         button4.interactable = true;
         buttonText4.text = title;
     }
-    void ChooseItem()
-    {
-        chooseItem = true;
-    }
-    void ChooseOption()
-    {
-        chooseItem = false;
-    }
     void CleanButton()
     {
         buttonText1.text = "";
@@ -82,52 +70,24 @@ public class ButtonDetector : MonoBehaviour
     }
     public void PressOption1()
     {
-        if (chooseItem)
-        {
-            SendMessage("ChangePath", "/Option[@name='" + buttonText1.text + "']");
-        }
-        else
-        {
-            SendMessage("ChangePath", "/Option1");
-        }
+        SendMessage("ChangePath", "/Option1");
         SendMessage("CleanButton");
     }
 
     public void PressOption2()
     {
-        if (chooseItem)
-        {
-            SendMessage("ChangePath", "/Option[@name='" + buttonText2.text + "']");
-        }
-        else
-        {
-            SendMessage("ChangePath", "/Option2");
-        }
+        SendMessage("ChangePath", "/Option2");
         SendMessage("CleanButton");
     }
 
     public void PressOption3()
     {
-        if (chooseItem)
-        {
-            SendMessage("ChangePath", "/Option[@name='" + buttonText3.text + "']");
-        }
-        else
-        {
-            SendMessage("ChangePath", "/Option3");
-        }
+        SendMessage("ChangePath", "/Option3");
         SendMessage("CleanButton");
     }
     public void PressOption4()
     {
-        if (chooseItem)
-        {
-            SendMessage("ChangePath", "/Option[@name='" + buttonText4.text + "']");
-        }
-        else
-        {
-            SendMessage("ChangePath", "/Option4");
-        }
+        SendMessage("ChangePath", "/Option4");
         SendMessage("CleanButton");
     }
 }
