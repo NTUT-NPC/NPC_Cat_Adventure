@@ -67,20 +67,20 @@ public class CharacterController : MonoBehaviour
                 character1.DOColor(Color.grey, 1);
             }
         }
-        //else if (title == "【BOSS】")
-        //{
-        //    if (!(picture == "" || picture == "clean"))
-        //    {
-        //        character1.sprite = Resources.Load<Sprite>(path);
-        //    }
-        //    if (character1.sprite.name != "透明")
-        //    {
-        //        character1.DOColor(Color.white, 1).SetUpdate(true);
-        //    }
-        //    if (character2.sprite.name != "透明")
-        //   {
-        //        character2.DOColor(Color.white, 1);
-        //   }
-        //}
+        // else if (title == "【BOSS】")
+        // {
+        //     if (!(picture == "" || picture == "clean"))
+        //     {
+        //         character1.sprite = Resources.Load<Sprite>(path);
+        //     }
+        //     if (character1.sprite.name != "透明")
+        //     {
+        //         character1.DOColor(Color.white, 1).SetUpdate(true);
+        //     }
+        //     if (character2.sprite.name != "透明")
+        //     {
+        //         character2.DOColor(Color.white, 1);
+        //     }
+        // }
     }
 }

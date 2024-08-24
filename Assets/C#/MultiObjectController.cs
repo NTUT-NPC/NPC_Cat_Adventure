@@ -25,6 +25,11 @@ public class MultiObjectController : MonoBehaviour
         Next();
     }
 
+    void JumpLinePath(int x)
+    {   
+        dialogueProgress += x;
+    }
+
     void ChangePath(string path)
     {   
         dramaPath = dramaPath + path;
@@ -33,7 +38,7 @@ public class MultiObjectController : MonoBehaviour
     }
 
     void ChangePath(string[] arr)
-    {   
+    {
         dramaPath = arr[0];
         if (arr[1] == "")
         {
@@ -74,7 +79,7 @@ public class MultiObjectController : MonoBehaviour
         string[] arr = {element.GetAttribute("name"), element.InnerText, element.GetAttribute("pic") };
         BroadcastMessage(element.Name, arr);
         
-        if (element.Name == "Background" || element.Name == "Option1" || element.Name == "Option2" || element.Name == "Option3" || element.Name == "Option4" || element.Name == "HPminusBoss" || element.Name == "HPminusMy" || element.Name == "Achievement" || element.Name == "ChooseOption" || element.Name == "Shield")
+        if (element.Name == "Background" || element.Name == "Option1" || element.Name == "Option2" || element.Name == "Option3" || element.Name == "Option4" || element.Name == "HPminusBoss" || element.Name == "HPminusMy" || element.Name == "Achievement" || element.Name == "Shield" || element.Name == "CheckHP")
         {
             nextStandby = true;
             SendMessage("GetPressed", "");

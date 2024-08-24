@@ -26,6 +26,7 @@ public class BagHPController : MonoBehaviour
     float HPScale_Boss = 1F;
     float HPScale_My = 1F;
     bool BossStart;
+    bool[] itemUsed;
     List<string> itemList;
 
     // Start is called before the first frame update
@@ -34,10 +35,12 @@ public class BagHPController : MonoBehaviour
         bag.SetActive(false);
         shield.SetActive(false);
         bagnum = 0;
+        itemUsed = new bool[itemButtons.Length];
         for(int i = 0; i < itemButtons.Length; i++){
             itemButtons[i].interactable = false;
             itemTexts[i].text = "";
             itemImages[i].sprite = Resources.Load<Sprite>("透明");
+            itemUsed[i] = false;
         }
         
         HPScale_Boss = 1F;
@@ -68,6 +71,7 @@ public class BagHPController : MonoBehaviour
                 itemImages[bagnum++].sprite = Resources.Load<Sprite>("Item/" + picture);
                 itemList.Add(picture);
             }
+            // SendMessage("JumpLinePath", 1);
         }
         else if (title == "【BOSS 出現】")
         {
@@ -79,17 +83,7 @@ public class BagHPController : MonoBehaviour
             BossStart = true;
         }
     }
-    void ChooseItem(string[] arr)
-    {
-        if (HPScale_Boss <= 0 || bagnum == 0)
-        {
-            HP_Boss.DOFade(0, 0f);
-            HPBar_Boss.DOFade(0, 0f);
-            arr[0] = arr[1];
-            arr[1] = "0";
-            SendMessage("ChangePath", arr);
-        }
-    }
+    void ChooseItem(string[] arr){}
     void HPminusBoss(string[] arr)
     {
         HPScale_Boss -= Convert.ToSingle(arr[1]);
@@ -97,8 +91,31 @@ public class BagHPController : MonoBehaviour
     }
     void HPminusMy(string[] arr)
     {
-        HPScale_My -= Convert.ToSingle(arr[1]);
-        HPBar_My.DOFillAmount(HPScale_My, 3f);
+        if(!shield.activeSelf){
+            HPScale_My -= Convert.ToSingle(arr[1]);
+            HPBar_My.DOFillAmount(HPScale_My, 3f);
+        }
+        else{
+            shield.SetActive(false);
+            SendMessage("ChangePath", "/Option");
+        }
+    }
+    void CheckHP(string[] arr)
+    {
+        if (HPScale_Boss <= 0)
+        {
+            End();
+            arr[0] = arr[1];
+            arr[1] = "0";
+            SendMessage("ChangePath", arr);
+        }
+        else if (HPScale_My <= 0)
+        {
+            End();
+            arr[0] = "GameoverScene";
+            arr[1] = "0";
+            SendMessage("ChangePath", arr);
+        }
     }
     void Shield(string[] arr)
     {
@@ -110,10 +127,19 @@ public class BagHPController : MonoBehaviour
     }
     public void PressitemButton(int index)
     {
-        if(BossStart){
+        if(BossStart && !itemUsed[index]){
             bag.SetActive(false);
             itemImages[index].DOFade(0.5f, 0);
+            itemUsed[index] = true;
             SendMessage("ChangePath", "/Option[@name='" + itemTexts[index].text + "']");
         }
+    }
+
+    void End(){
+        bag.SetActive(false);
+        HP_Boss.DOFade(0, 0f);
+        HPBar_Boss.DOFade(0, 0f);
+        HP_My.DOFade(0, 0f);
+        HPBar_My.DOFade(0, 0f);
     }
 }
