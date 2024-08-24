@@ -509,7 +509,7 @@
 		<Option name="Shield">
 			<Dialogue name="【通知】" pic="盾牌">「盾牌」發揮了效果。</Dialogue>
 			<Dialogue name="【BOSS】">盾牌發出了閃耀的光芒，此時佛地魔被閃瞎，暫停了他的攻擊。</Dialogue>
-			<ChangePath name ="Boss1">5</ChangePath>
+			<ChangePath name="Boss1">5</ChangePath>
 		</Option>
 	</Boss1>
 
