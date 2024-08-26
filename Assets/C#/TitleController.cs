@@ -1,41 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.UI;
-
 using DG.Tweening;
 
 public class TitleController : MonoBehaviour
 {
-    public Text text;
-
-    void Start()
-    {
-        text = GetComponent<Text>();
-    }
-
+    public Text title;
+    
     void Dialogue(string[] arr)
     {
-        string title = arr[0];
-        string content = arr[1];
-        text.text = "";
+        string xmlTitle = arr[0];
+        
+        title.text = "";
 
-        if (!(title == "【旁白】" || title == "【BOSS】"))
+        Color targetColor = xmlTitle switch
         {
-            text.text = title;
-        }
-        if (title == "【通知】")
-        {
-            text.DOColor(Color.yellow, 1);
-        }
-        else if (title == "【成就】" || title == "【BOSS 出現】")
-        {
-            text.DOColor(Color.red, 0);
-        }
-        else
-        {
-            text.DOColor(Color.white, 0);
-        }
+            "【通知】" => Color.yellow,
+            "【成就】" or "【BOSS 出現】" => Color.red,
+            _ => Color.white
+        };
+        
+        var speed = xmlTitle.Length * 0.05F; // adjust speed
+
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(title.DOText(xmlTitle, speed));
+        sequence.Join(title.DOColor(targetColor, speed));
     }
 }
