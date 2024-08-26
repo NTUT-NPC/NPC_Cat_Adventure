@@ -1,14 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Xml;
-using System.IO;
-
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
-
-using DG.Tweening;
 
 public class MultiObjectController : MonoBehaviour
 {
@@ -79,7 +71,12 @@ public class MultiObjectController : MonoBehaviour
         string[] arr = {element.GetAttribute("name"), element.InnerText, element.GetAttribute("pic") };
         BroadcastMessage(element.Name, arr);
         
-        if (element.Name == "Background" || element.Name == "Option1" || element.Name == "Option2" || element.Name == "Option3" || element.Name == "Option4" || element.Name == "HPminusBoss" || element.Name == "HPminusMy" || element.Name == "Achievement" || element.Name == "Shield" || element.Name == "CheckHP")
+        if (element.Name == "Background" || 
+            element.Name == "Option1" || element.Name == "Option2" ||
+            element.Name == "Option3" || element.Name == "Option4" || 
+            element.Name == "HPminusBoss" || element.Name == "HPminusMy" || 
+            element.Name == "Achievement" || element.Name == "Shield" || 
+            element.Name == "CheckHP")
         {
             nextStandby = true;
             SendMessage("GetPressed", "");
