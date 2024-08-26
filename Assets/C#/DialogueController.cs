@@ -1,53 +1,32 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.UI;
-
 using DG.Tweening;
 
 public class DialogueController : MonoBehaviour
 {   
-    public GameObject Text1;
-    public GameObject Text2;
-    private Text text1;
-    private Text text2;
-    void Start()
-    {
-        text1 = Text1.GetComponent<Text>();
-        text2 = Text2.GetComponent<Text>();
+    public Text dialogue;
+    public Text narrator;
 
-        text1.text = "";
-        text2.text = "";
-    }
     IEnumerator Dialogue(string[] arr)
     {   
-        string title = arr[0];
-        string content = arr[1];
-        string picture = arr[2];
+        string xmlTitle = arr[0];
+        string xmlContent = arr[1];
+        string xmlPicture = arr[2];
 
-        text1.text = "";
-        text2.text = "";
-        float speed = content.Length * 0.01F; ///////
-        if (content.Contains(" "))
-        {
-            content = content.Replace(" ", "\u00A0");
-        }
-        if (title == "【旁白】" || title == "【BOSS】")
-        {
-            text1.text = "";
-            text2.DOText(content, speed).SetUpdate(true);
-        }
-        else
-        {
-            text2.text = "";
-            text1.DOText(content, speed).SetUpdate(true);
-        }
+        float speed = xmlContent.Length * 0.01F; // adjust speed
         
-        yield return new WaitForSeconds(speed+0.1f);
+        xmlContent = xmlContent
+            .Replace(" ", "\u00A0")
+            .Replace("\\\\NL", "\n");
+     
+        dialogue.text = narrator.text = "";
+
+        Text targetText = (xmlTitle == "【旁白】" || xmlTitle == "【BOSS】") ? narrator : dialogue;
+        targetText.DOText(xmlContent, speed).SetUpdate(true);
+
+        yield return new WaitForSeconds(speed + 0.1f);
 
         SendMessageUpwards("NextStandby");
-        BroadcastMessage("NextStandby");
-        
     }
 }
