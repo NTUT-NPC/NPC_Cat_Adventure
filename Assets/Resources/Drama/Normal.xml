@@ -130,8 +130,8 @@
 
 	<Chapter2-1>
 		<Background pic = "池塘"></Background>
-		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
-		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
+		<Dialogue name="【旁白】" pic="">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】" pic="書">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
 		<Option1 name="要">
 			<ChangePath name ="book1-1"></ChangePath>
 		</Option1>
@@ -142,7 +142,7 @@
 
 	<book1-1>
 		<Background pic = "書"></Background>
-		<Dialogue name="【旁白】">凱米颱風生成才三天。</Dialogue>
+		<Dialogue name="【旁白】" pic="">凱米颱風生成才三天。</Dialogue>
 		<Dialogue name="【旁白】">就要往我們台灣筆直衝刺。</Dialogue>
 		<Background pic = "颱風撞山"></Background>
 		<Dialogue name="【旁白】">就為了騎在台灣那粗大的中央山脈上。</Dialogue>
@@ -186,8 +186,8 @@
 
 	<Chapter2-2>
 		<Background pic = "池塘"></Background>
-		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
-		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
+		<Dialogue name="【旁白】" pic="">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】" pic="書">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
 		<Option1 name="要">
 			<ChangePath name ="book2-1"></ChangePath>
 		</Option1>
@@ -265,12 +265,12 @@
 		<Background pic = "全黑"></Background>
 		<Dialogue name="【旁白】">四周頓時陰風陣陣，在你面前遠方突然一道閃電劃破了天際。</Dialogue>
 		<Dialogue name="【旁白】">你隱約聽到了哭聲。</Dialogue>
-		<Dialogue name="【某哭聲】" pic="皮諾丘1">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</Dialogue>
-		<Dialogue name="【皮諾丘】" pic="皮諾丘2">大家都知道，如果我說謊，我的鼻子就會變長，若否，則鼻子安然無恙。但如果我說：「我的鼻子要變長了！」，那麼，我的鼻子是會忽長忽短？變長？還是無事發生呢？</Dialogue>
-		<Dialogue name="【皮諾丘】" pic="皮諾丘1">他人擔心我說出這句話之後，鼻子忽長忽短，而我會調皮地拿這件事戲弄他人，就將我燒毀了，你們一定要找到事情真相？我是枉死的嗎？</Dialogue>
+		<Dialogue name="【某哭聲】" pic="皮諾丘">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</Dialogue>
+		<Dialogue name="【皮諾丘】" pic="皮諾丘">大家都知道，如果我說謊，我的鼻子就會變長，若否，則鼻子安然無恙。但如果我說：「我的鼻子要變長了！」，那麼，我的鼻子是會忽長忽短？變長？還是無事發生呢？</Dialogue>
+		<Dialogue name="【皮諾丘】" pic="皮諾丘">他人擔心我說出這句話之後，鼻子忽長忽短，而我會調皮地拿這件事戲弄他人，就將我燒毀了，你們一定要找到事情真相？我是枉死的嗎？</Dialogue>
 		<Option1 name="是，你是枉死的，你的鼻子根本不會變長！">
 			<Dialogue name="【旁白】">大肌肌 Ken 答對了問題。</Dialogue>
-			<Dialogue name="【皮諾丘】" pic="皮諾丘3">你是電 你是光 你是唯一的神話！你也領了我的紅包，不能說不要跟我結婚！我跟你走~</Dialogue>
+			<Dialogue name="【皮諾丘】" pic="皮諾丘">你是電 你是光 你是唯一的神話！你也領了我的紅包，不能說不要跟我結婚！我跟你走~</Dialogue>
 			<Dialogue name="【通知】" pic="戀愛腦的皮諾丘">獲得戀愛腦的皮諾丘一位。</Dialogue>
 			<Background pic = "繼續前行"></Background>
 			<ChangePath name ="Chapter3-3"></ChangePath>
@@ -287,7 +287,7 @@
 
 	<Chapter3-1>
 		<Background pic = "繼續前行"></Background>
-		<Dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
+		<Dialogue name="【旁白】" pic="">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
 		<Background pic = "普通的門"></Background>
 		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
 		<Background pic = "普通房間"></Background>
@@ -346,8 +346,12 @@
 		<Dialogue name="【旁白】">你願意幫阿偉開箱找錢嗎？</Dialogue>
 		<Option1 name="願意">
 			<Dialogue name="【旁白】">你們決定幫阿偉尋找一百元，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</Dialogue>
-			<ChangePath name ="Chapter3-2">8</ChangePath>
-		</Option1><Background pic = "寶箱房間"></Background>
+			<ChangePath name ="Chapter3-2-1"></ChangePath>
+		</Option1>
+	</Chapter3-2>
+	
+	<Chapter3-2-1>
+		<Background pic = "寶箱房間"></Background>
 		<Dialogue name="【旁白】">在使用 localhost 時，請求會被發送到哪裡？</Dialogue>
 		<Option1 name="本地計算機的網絡接口">
 			<Dialogue name="【旁白】">箱子打開後，果然是阿偉要找的一百元，他非常高興地替你們開了門，自己則跑去找彬彬了。</Dialogue>
@@ -367,7 +371,7 @@
 			<Dialogue name="【旁白】">箱子並打不開。</Dialogue>
 			<ChangePath name ="Chapter3-2">8</ChangePath>
 		</Option4>
-	</Chapter3-2>
+	</Chapter3-2-1>
 
 	<Q3-2-2>
 		<Dialogue name="【旁白】">繼承的主要目的是（請選出最佳答案）？</Dialogue>
@@ -459,7 +463,7 @@
 			<CheckHP>End1</CheckHP>
 			<ChangePath name ="Boss1">5</ChangePath>
 			<Option>
-				<Dialogue name="【通知】" pic = "盾牌">「盾牌」發揮了效果。</Dialogue>
+				<Dialogue name="【通知】" pic = "盾牌">\\NL「盾牌」發揮了效果。</Dialogue>
 				<Dialogue name="【BOSS】">盾牌發出了閃耀的光芒，此時佛地魔被閃瞎，暫停了他的攻擊。</Dialogue>
 				<ChangePath name ="Boss1">5</ChangePath>
 			</Option>
@@ -479,7 +483,7 @@
 			<CheckHP>End1</CheckHP>
 			<ChangePath name ="Boss1">5</ChangePath>
 			<Option>
-				<Dialogue name="【通知】" pic="盾牌">「盾牌」發揮了效果。</Dialogue>
+				<Dialogue name="【通知】" pic="盾牌">\\NL「盾牌」發揮了效果。</Dialogue>
 				<Dialogue name="【BOSS】">盾牌發出了閃耀的光芒，此時佛地魔被閃瞎，暫停了他的攻擊。</Dialogue>
 				<ChangePath name ="Boss1">5</ChangePath>
 			</Option>
@@ -507,7 +511,7 @@
 			<ChangePath name ="Boss1">5</ChangePath>
 		</Option>
 		<Option name="Shield">
-			<Dialogue name="【通知】" pic="盾牌">「盾牌」發揮了效果。</Dialogue>
+			<Dialogue name="【通知】" pic="盾牌">\\NL「盾牌」發揮了效果。</Dialogue>
 			<Dialogue name="【BOSS】">盾牌發出了閃耀的光芒，此時佛地魔被閃瞎，暫停了他的攻擊。</Dialogue>
 			<ChangePath name="Boss1">5</ChangePath>
 		</Option>
