@@ -64,14 +64,13 @@ public class BagHPController : MonoBehaviour
 
         if (title == "【通知】" && picture != "")
         {   
-            if (!itemList.Contains(picture))
+            if (!itemList.Contains(picture) && picture != "盾牌")
             {
                 itemButtons[bagnum].interactable = true;
                 itemTexts[bagnum].text = picture;
                 itemImages[bagnum++].sprite = Resources.Load<Sprite>("Item/" + picture);
                 itemList.Add(picture);
             }
-            // SendMessage("JumpLinePath", 1);
         }
         else if (title == "【BOSS 出現】")
         {
@@ -97,7 +96,10 @@ public class BagHPController : MonoBehaviour
         }
         else{
             shield.SetActive(false);
-            SendMessage("ChangePath", "/Option");
+            string[] path = new string[2];
+            path[0] = "ShieldStory";
+            path[1] = "0";
+            SendMessage("ChangePath", path);
         }
     }
     void CheckHP(string[] arr)

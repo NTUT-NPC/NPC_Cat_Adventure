@@ -10,19 +10,23 @@ public class TitleController : MonoBehaviour
     {
         string xmlTitle = arr[0];
         
-        title.text = "";
+        title.text = xmlTitle;
 
-        Color targetColor = xmlTitle switch
+        if (xmlTitle == "【旁白】" || xmlTitle == "【BOSS】")
         {
-            "【通知】" => Color.yellow,
-            "【成就】" or "【BOSS 出現】" => Color.red,
-            _ => Color.white
-        };
-        
-        var speed = xmlTitle.Length * 0.05F; // adjust speed
-
-        Sequence sequence = DOTween.Sequence();
-        sequence.Append(title.DOText(xmlTitle, speed));
-        sequence.Join(title.DOColor(targetColor, speed));
+            title.text = "";
+        }
+        if (xmlTitle == "【通知】")
+        {
+            title.DOColor(Color.yellow, 1);
+        }
+        else if (xmlTitle == "【成就】" || xmlTitle == "【BOSS 出現】")
+        {
+            title.DOColor(Color.red, 0);
+        }
+        else
+        {
+            title.DOColor(Color.white, 0);
+        }
     }
 }

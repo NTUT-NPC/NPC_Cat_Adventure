@@ -17,11 +17,6 @@ public class MultiObjectController : MonoBehaviour
         Next();
     }
 
-    void JumpLinePath(int x)
-    {   
-        dialogueProgress += x;
-    }
-
     void ChangePath(string path)
     {   
         dramaPath = dramaPath + path;

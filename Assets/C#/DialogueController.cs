@@ -15,11 +15,11 @@ public class DialogueController : MonoBehaviour
         string xmlPicture = arr[2];
 
         float speed = xmlContent.Length * 0.01F; // adjust speed
-        
+
         xmlContent = xmlContent
             .Replace(" ", "\u00A0")
             .Replace("\\\\NL", "\n");
-     
+
         dialogue.text = narrator.text = "";
 
         Text targetText = (xmlTitle == "【旁白】" || xmlTitle == "【BOSS】") ? narrator : dialogue;
