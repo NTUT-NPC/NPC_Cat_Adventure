@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 using DG.Tweening;
 
-public class CharacterController : MonoBehaviour
+public class MyCharacterController : MonoBehaviour
 {
     public Image character1;
     public Image character2;
@@ -16,17 +16,34 @@ public class CharacterController : MonoBehaviour
         string content = arr[1];
         string picture = arr[2];
         string path = "Character/" + picture;
+
+        // 設定character1,2的圖片
         if(picture == "clean")
         {
             character2.sprite = Resources.Load<Sprite>("透明");
             Debug.Log("角色二透明");
         }
-        if (picture == "cleanAll")
+        else if (picture == "cleanAll")
         {
             character1.sprite = Resources.Load<Sprite>("透明");
             character2.sprite = Resources.Load<Sprite>("透明");
         }
-        else if (title == "【通知】")
+        else if(picture != "" && title != "【通知】")
+        {
+            if(picture.Contains("小N"))
+            {
+                character1.sprite = Resources.Load<Sprite>(path);
+                Debug.Log("小N");
+            }
+            else 
+            {
+                character2.sprite = Resources.Load<Sprite>(path);
+                Debug.Log("其他");
+            }
+        }
+
+        // 調整character1,2的亮度
+        if (title == "【通知】")
         {
             if (character2.sprite.name != "透明")
             {
@@ -38,11 +55,7 @@ public class CharacterController : MonoBehaviour
             }
         }
         else if (title == "【旁白】" || title == "【小 N】" || title == "【我】")
-        {       
-            if (!(picture == "" || picture == "clean"))
-            {
-                character1.sprite = Resources.Load<Sprite>(path);
-            }
+        {
             if (character1.sprite.name != "透明")
             {
                 character1.DOColor(Color.white, 1).SetUpdate(true);
@@ -54,10 +67,6 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
-            if (!(picture == "" || picture == "clean"))
-            {   
-                character2.sprite = Resources.Load<Sprite>(path);
-            }
             if (character2.sprite.name != "透明")
             {
                 character2.DOColor(Color.white, 1).SetUpdate(true); 
@@ -67,20 +76,5 @@ public class CharacterController : MonoBehaviour
                 character1.DOColor(Color.grey, 1);
             }
         }
-        // else if (title == "【BOSS】")
-        // {
-        //     if (!(picture == "" || picture == "clean"))
-        //     {
-        //         character1.sprite = Resources.Load<Sprite>(path);
-        //     }
-        //     if (character1.sprite.name != "透明")
-        //     {
-        //         character1.DOColor(Color.white, 1).SetUpdate(true);
-        //     }
-        //     if (character2.sprite.name != "透明")
-        //     {
-        //         character2.DOColor(Color.white, 1);
-        //     }
-        // }
     }
 }

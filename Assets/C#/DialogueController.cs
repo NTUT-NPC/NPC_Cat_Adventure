@@ -16,9 +16,7 @@ public class DialogueController : MonoBehaviour
 
         float speed = xmlContent.Length * 0.01F; // adjust speed
 
-        xmlContent = xmlContent
-            .Replace(" ", "\u00A0")
-            .Replace("\\\\NL", "\n");
+        xmlContent = xmlContent.Replace(" ", "\u00A0");
 
         dialogue.text = narrator.text = "";
 

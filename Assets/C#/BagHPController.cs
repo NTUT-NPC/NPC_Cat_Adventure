@@ -139,6 +139,7 @@ public class BagHPController : MonoBehaviour
 
     void End(){
         bag.SetActive(false);
+        shield.SetActive(false);
         HP_Boss.DOFade(0, 0f);
         HPBar_Boss.DOFade(0, 0f);
         HP_My.DOFade(0, 0f);

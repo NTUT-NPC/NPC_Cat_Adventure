@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<drama>
-	<test>
-	</test>
+<drama>=
 	<Chapter0>
 		<Background pic="校園施工"></Background>
 		<Dialogue name="【旁白】" pic="小N_發現了什麼">校園內的工程正如火如荼的進行中，某天雨後，小Ｎ和你來到校園放風。</Dialogue>
@@ -72,12 +70,12 @@
 		<Dialogue name="【尼斯湖水怪】">過我這關才沒有那麼簡單呢~~~~~~</Dialogue>
 		<Dialogue name="【旁白】">如果你要拯救小 N ，你會選擇何種方式？</Dialogue>
 		<Option1 name="哈姆立克法">
-			<Dialogue name="【旁白】" pic="clean">你使用了哈姆立克法，戳中了裂痕的交會處。</Dialogue>
+			<Dialogue name="【旁白】">你使用了哈姆立克法，戳中了裂痕的交會處。</Dialogue>
 			<Dialogue name="【旁白】">（轟）</Dialogue>
 			<Dialogue name="【旁白】">（你把小 N 滿肚子的火發洩了出來。小 N 被解救了）</Dialogue>
 			<Dialogue name="【旁白】" pic="尼斯湖水怪3">尼斯湖水怪被你的創舉燒死了！</Dialogue>
 			<Dialogue name="【通知】" pic="尼斯湖水怪的精髓">獲得尼斯湖水怪的精髓。</Dialogue>
-			<Dialogue name="【旁白】">於是你與小 N 成功過了這關。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 成功過了這關。</Dialogue>
 			<ChangePath name="Chapter2-1"></ChangePath>
 		</Option1>
 		<Option2 name="灑水降溫法">
@@ -87,13 +85,13 @@
 			<Dialogue name="【旁白】">（水把火滅了）</Dialogue>
 			<Dialogue name="【旁白】">水泥碎裂，一切都沒發生，小 N 變回了原狀。</Dialogue>
 			<Dialogue name="【通知】" pic="水泥碎片">獲得水泥碎片。</Dialogue>
-			<Dialogue name="【旁白】">好啦看在你那麼機智的份上，我就暫時放了你們兩個吧！</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">好啦看在你那麼機智的份上，我就暫時放了你們兩個吧！</Dialogue>
 			<ChangePath name="Chapter2-2"></ChangePath>
 		</Option2>
 		<Option3 name="激將法">
 			<Dialogue name="【旁白】">（小 N 炸開，變為人型）</Dialogue>
 			<Dialogue name="【小 N】">沒想到你居然敢跟我槓架！我都已經燒成這樣了你忍心嗎！！</Dialogue>
-			<Dialogue name="【旁白】">（小 N 招來了凱米颱風，你被颱風捲走了）</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">（小 N 招來了凱米颱風，你被颱風捲走了）</Dialogue>
 			<ChangePath name="GameoverScene"></ChangePath>
 		</Option3>
 	</Chapter1-1-2>
@@ -129,9 +127,9 @@
 	</Chapter1-2>
 
 	<Chapter2-1>
-		<Background pic="池塘"></Background>
-		<Dialogue name="【旁白】" pic="">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
-		<Dialogue name="【旁白】" pic="書">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
+		<Background pic="湖"></Background>
+		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
 		<Option1 name="要">
 			<ChangePath name="book1-1"></ChangePath>
 		</Option1>
@@ -142,7 +140,7 @@
 
 	<book1-1>
 		<Background pic="書"></Background>
-		<Dialogue name="【旁白】" pic="">凱米颱風生成才三天。</Dialogue>
+		<Dialogue name="【旁白】">凱米颱風生成才三天。</Dialogue>
 		<Dialogue name="【旁白】">就要往我們台灣筆直衝刺。</Dialogue>
 		<Background pic="颱風撞山"></Background>
 		<Dialogue name="【旁白】">就為了騎在台灣那粗大的中央山脈上。</Dialogue>
@@ -185,9 +183,9 @@
 	</book1-2>
 
 	<Chapter2-2>
-		<Background pic="池塘"></Background>
-		<Dialogue name="【旁白】" pic="">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
-		<Dialogue name="【旁白】" pic="書">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
+		<Background pic="湖"></Background>
+		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
 		<Option1 name="要">
 			<ChangePath name="book2-1"></ChangePath>
 		</Option1>
@@ -287,7 +285,7 @@
 
 	<Chapter3-1>
 		<Background pic="繼續前行"></Background>
-		<Dialogue name="【旁白】" pic="">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
+		<Dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
 		<Background pic="普通的門"></Background>
 		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
 		<Background pic="普通房間"></Background>
