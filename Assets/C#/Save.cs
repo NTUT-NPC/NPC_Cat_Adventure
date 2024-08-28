@@ -20,9 +20,9 @@ public class Save : MonoBehaviour
             document.LoadXml(xmlFile.text); // Xml讀取文件的方法;
 
             XmlNode node = document.SelectSingleNode("root");
-            XmlElement item = document.CreateElement("Item");//創建新的子節點
-            item.SetAttribute("name", content);//創建新子節點屬性名和屬性值
-            node.AppendChild(item);//將子節點按照創建順序，添加到xml
+            XmlElement item = document.CreateElement("Item");// 創建新的子節點
+            item.SetAttribute("name", content);// 創建新子節點屬性名和屬性值
+            node.AppendChild(item);// 將子節點按照創建順序，添加到xml
             document.AppendChild(node);
         }
     }

@@ -31,10 +31,4 @@ public class GetStartController : MonoBehaviour
         PlayerPrefs.SetString("ID", id);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

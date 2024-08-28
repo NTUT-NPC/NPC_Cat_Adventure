@@ -357,15 +357,15 @@
 		</Option1>
 		<Option2 name="外部伺服器">
 			<Dialogue name="【旁白】">箱子並打不開。</Dialogue>
-			<ChangePath name="Chapter3-2">8</ChangePath>
+			<ChangePath name="Chapter3-2-1">1</ChangePath>
 		</Option2>
 		<Option3 name="全球互聯網">
 			<Dialogue name="【旁白】">箱子並打不開。</Dialogue>
-			<ChangePath name="Chapter3-2">8</ChangePath>
+			<ChangePath name="Chapter3-2-1">1</ChangePath>
 		</Option3>
 		<Option4 name="另一台網絡上的計算機 ">
 			<Dialogue name="【旁白】">箱子並打不開。</Dialogue>
-			<ChangePath name="Chapter3-2">8</ChangePath>
+			<ChangePath name="Chapter3-2-1">1</ChangePath>
 		</Option4>
 	</Chapter3-2-1>
 

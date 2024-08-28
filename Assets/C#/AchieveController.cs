@@ -23,12 +23,12 @@ public class AchieveController : MonoBehaviour
         // IDText = GetComponent("IDText") as Text;
         IDText.text = "ID: " + PlayerPrefs.GetString("ID", "false");
         Text[] texts = TextParent.GetComponentsInChildren<Text>();
-        //texts[0].text = "  【簡單版】 結局一";
-        //texts[1].text = "  【簡單版】 結局二";
-        //texts[2].text = "  【簡單版】 結局三";
-        //texts[0].DOColor(Color.green, 0);
-        //texts[1].DOColor(Color.green, 0);
-        //texts[2].DOColor(Color.green, 0);
+        // texts[0].text = "  【簡單版】 結局一";
+        // texts[1].text = "  【簡單版】 結局二";
+        // texts[2].text = "  【簡單版】 結局三";
+        // texts[0].DOColor(Color.green, 0);
+        // texts[1].DOColor(Color.green, 0);
+        // texts[2].DOColor(Color.green, 0);
         texts[0].text = "  【普通版】 結局一";
         texts[1].text = "  【普通版】 結局二";
         texts[2].text = "  【普通版】 結局三";
@@ -56,7 +56,7 @@ public class AchieveController : MonoBehaviour
     }
     void Achievement(string[] arr)
     {
-        //texts[Int32.Parse(arr[0])].DOFade(1, 0);
+        // texts[Int32.Parse(arr[0])].DOFade(1, 0);
     }
 
     public void ReturnButtonPress()

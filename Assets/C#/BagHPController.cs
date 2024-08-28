@@ -81,6 +81,7 @@ public class BagHPController : MonoBehaviour
 
             BossStart = true;
         }
+        bag.SetActive(false);
     }
     void ChooseItem(string[] arr){}
     void HPminusBoss(string[] arr)
@@ -131,7 +132,7 @@ public class BagHPController : MonoBehaviour
     {
         if(BossStart && !itemUsed[index]){
             bag.SetActive(false);
-            itemImages[index].DOFade(0.5f, 0);
+            itemImages[index].DOFade(0.3f, 0);
             itemUsed[index] = true;
             SendMessage("ChangePath", "/Option[@name='" + itemTexts[index].text + "']");
         }
