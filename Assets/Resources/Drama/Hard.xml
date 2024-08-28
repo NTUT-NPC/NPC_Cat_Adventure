@@ -1,450 +1,726 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<drama>
-	<test>
-	</test>
+<drama>=
 	<Chapter0>
-		<Background pic = "地下通道"></Background>
-		<Dialogue name = "【旁白】" pic="小N_發現了什麼">在參觀校園的時候，你與小 N 在北科某個神祕角落發現了一條地下通道，勇敢的你們決定動身探索深不見底的洞窟。</Dialogue>
-		<Dialogue name = "【通知】" pic = "一支壞掉的手電筒">獲得一支普通的手電筒。</Dialogue>
-		<Background pic = "粉黑兩扇門"></Background>
-		<Dialogue name = "【旁白】">小N打開手電筒，順著樓梯往下走，遇上了兩扇門。</Dialogue>
-		<Dialogue name = "【旁白】">一扇是綴有蝴蝶結的粉色塑膠門，一扇是寫了幾個數學公式的黑色木門，請問你會選擇哪一扇門？</Dialogue>
-		<Option2 name="黑色木門">
-			<Background pic = "黑門">Skip Animation</Background>
-			<Dialogue name = "【我】">看不懂公式，但感覺比較正經，選這扇好了！</Dialogue>
-			<ChangePath name ="Chapter1-1"></ChangePath>
-		</Option2>
-		<Option1 name="粉色塑膠門">
-			<Background pic = "粉門">Skip Animation</Background>
-			<Dialogue name = "【我】">哇賽，死亡芭比粉，門後一定有怪怪的東西，想看！</Dialogue>
-			<ChangePath name ="Chapter1-2"></ChangePath>
+		<Background pic="校園施工"></Background>
+		<Dialogue name="【旁白】" pic="小N_發現了什麼">校園內的工程正如火如荼的進行中，某天雨後，小Ｎ和你來到校園放風。</Dialogue>
+		<Dialogue name="【旁白】">突然踩到了工人沒有收拾好的東西，摔了一跤之後跌入人孔蓋裡面。</Dialogue>
+		<Dialogue name="【通知】" pic="一支火把">獲得一支火把。</Dialogue>
+		<Background pic="水道"></Background>
+		<Dialogue name="【旁白】">小 N 點亮火把，沿著管道往下爬，遇上了兩個通往不同方向的水道。</Dialogue>
+		<Dialogue name="【旁白】">一個水道是清澈見底的，另一個水道上面佈滿了七彩的油墨，請問你會選擇哪一邊？</Dialogue>
+		<Option1 name="七彩油墨的水道">
+			<Background pic="七彩油墨">Skip Animation</Background>
+			<Dialogue name="【我】">七彩油墨，想想就覺得噁心！</Dialogue>
+			<ChangePath name="Chapter1-1"></ChangePath>
 		</Option1>
+		<Option2 name="清澈見底的水道">
+			<Background pic="清澈見底">Skip Animation</Background>
+			<Dialogue name="【我】">哇嗚！水質那麼清澈，肯定會驚喜！</Dialogue>
+			<ChangePath name="Chapter1-2"></ChangePath>
+		</Option2>
 	</Chapter0>
 
 	<Chapter1-1>
-		<Background pic = "黑色房間"></Background>
-		<Dialogue name="【旁白】" pic="小N_似乎在對話">你選擇打開那扇黑色的門。裡面是暗色的房間，正中央擺了張書桌，上頭有本老舊的筆記本。</Dialogue>
-		<Dialogue name="【旁白】">你打開那本筆記本，發現裡面寫了字。</Dialogue>
-		<Dialogue name="【旁白】">此為奧本海默紀錄複本，請回答以下問題，方能繼續前行。</Dialogue>
-		<Dialogue name="【旁白】">下列何者不是 CPU 架構？</Dialogue>
-		<Option1 name="RISC-V">
-			<Dialogue name="【旁白】">紀錄複本發光並開始抖動，房間隱藏機關被啟動，核彈把你們炸飛了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Background pic="黑色房間"></Background>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">你選擇了布滿油汙的管道。突然入口噴出了又黏又臭的油汙，把你臭昏了。</Dialogue>
+		<Dialogue name="【旁白】">醒來之後發現你出現在一個黑暗無光的房間內。桌上有一個	正冒著煙。</Dialogue>
+		<Dialogue name="【旁白】">（a few minutes later）</Dialogue>
+		<Dialogue name="【尼斯湖水怪】" pic="尼斯湖水怪1">你怎麼在這裡？</Dialogue>
+		<Dialogue name="【我】">我不小心走錯路了。</Dialogue>
+		<Dialogue name="【尼斯湖水怪】">（emmm…既然這樣的話）</Dialogue>
+		<Dialogue name="【尼斯湖水怪】">我不要再為難你了！回答了問題就帶你去清洗一下身體吧～</Dialogue>
+		<Dialogue name="【旁白】">請問今年第一個登陸的颱風是什麼名字？</Dialogue>
+		<Option1 name="凱米">
+			<Dialogue name="【旁白】">正確！看來颱風假沒少放！</Dialogue>
+			<Dialogue name="【通知】" pic="暴風圈">獲得暴風圈。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著暴風圈繼續向下走。</Dialogue>
+			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option1>
-		<Option2 name="ARM">
-			<Dialogue name="【旁白】">紀錄複本發光並開始抖動，房間隱藏機關被啟動，核彈把你們炸飛了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option2 name="珊珊">
+			<Dialogue name="【旁白】">海葵為 2023 第一個登陸的颱風，珊珊為今年跑去日本的那個颱風，蘇迪勒颱風為 2015 年的颱風。</Dialogue>
+			<Dialogue name="【通知】" pic="颱風眼">獲得颱風眼。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
+			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option2>
-		<Option3 name="PowerPC">
-			<Dialogue name="【旁白】">紀錄複本發光並開始抖動，房間隱藏機關被啟動，核彈把你們炸飛了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option3 name="海葵">
+			<Dialogue name="【旁白】">海葵為 2023 第一個登陸的颱風，珊珊為今年跑去日本的那個颱風，蘇迪勒颱風為 2015 年的颱風。</Dialogue>
+			<Dialogue name="【通知】" pic="颱風眼">獲得颱風眼。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
+			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option3>
-		<Option4 name="PowerShell">
-			<Dialogue name="【旁白】">你答出了正確答案，紀錄複本自動闔上書頁，露出壓在封面下的兩枚硬幣。</Dialogue>
-			<Dialogue name="【通知】" pic="塑膠鐵製硬幣">獲得兩枚老舊的硬幣，一枚塑膠製，一枚鐵製。</Dialogue>
-			<Dialogue name="【旁白】">於是你與小 N 帶著兩枚硬幣繼續向下走。</Dialogue>
-			<ChangePath name ="Chapter2-1"></ChangePath>
+		<Option4 name="蘇迪勒">
+			<Dialogue name="【旁白】">海葵為 2023 第一個登陸的颱風，珊珊為今年跑去日本的那個颱風，蘇迪勒颱風為 2015 年的颱風。</Dialogue>
+			<Dialogue name="【通知】" pic="颱風眼">獲得颱風眼。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
+			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option4>
 	</Chapter1-1>
 
-	<Chapter1-2>
-		<Background pic = "粉紅房間"></Background>
-		<Dialogue name="【旁白】" pic="小N_似乎在對話">你選擇打開那扇顏色歡樂的門。裡面是粉色的房間，有一套符合室內風格的茶桌與茶具。</Dialogue>
-		<Dialogue name="【旁白】">突然有個女聲開口，嚇了你們一跳，一位行舉機械的芭比娃娃邀請你與小 N 來場茶會。</Dialogue>
-		<Dialogue name="【Barbie】" pic="芭比">你好，要不要和我一起喝茶呢？</Dialogue>
-		<Dialogue name="【小 N】">……（點頭）</Dialogue>
-		<Dialogue name="【Barbie】">太好了！你說你是來探險的？看在你陪我喝茶的份上，如果你能答對這道題目，我就讓一位得力助手跟著你吧！</Dialogue>
-		<Dialogue name="【Barbie】">下列何者不是 HTTP 請求方法之一？</Dialogue>
-		<Option1 name="PUT">
-			<Dialogue name="【Barbie】">這麼簡單的題目都答不出來，還想來探險？好險沒有把我的助手交給你們。這裡太危險了，你們還是回去吧！</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">你們決定不聽 Barbie 的話繼續前進，但中途你們遇上了滾落的巨石，沒有 Ken 能幫你們抬住，你們被壓扁了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+	<Chapter1-1-2>
+		<Background pic="黑色房間"></Background>
+		<Dialogue name="【旁白】">對答完了後，水怪帶著我們來到淋浴間。</Dialogue>
+		<Dialogue name="【旁白】">看著正常的淋浴間，實則藏著深不可測的陷阱。</Dialogue>
+		<Dialogue name="【旁白】" pic="尼斯湖水怪2">水龍頭噴出來的，不是水，而是42號混凝土，伴隨著一點一氧化碳。</Dialogue>
+		<Dialogue name="【旁白】">此時天上掉下一顆蛋。</Dialogue>
+		<Dialogue name="【旁白】">小 N 實在是太餓太髒了，而且有點昏沉，已經分不清楚那是土還是混凝土，於是...</Dialogue>
+		<Dialogue name="【小 N】">我們這樣拌在一起吃，是不是可以吃到美味的土雞蛋啊（下嚥）</Dialogue>
+		<Dialogue name="【我】">啊啊啊啊啊不可以啊那是水泥！！</Dialogue>
+		<Dialogue name="【旁白】">水泥中的矽酸鹽與雞蛋中的蛋白質產生化學反應，小 N 食用過多，目前已經一肚子火。</Dialogue>
+		<Dialogue name="【旁白】">（小 N 已石化，化學反應導致熱脹冷縮，小 N 的外殼上布滿裂痕）</Dialogue>
+		<Dialogue name="【尼斯湖水怪】">過我這關才沒有那麼簡單呢~~~~~~</Dialogue>
+		<Dialogue name="【旁白】">如果你要拯救小 N ，你會選擇何種方式？</Dialogue>
+		<Option1 name="哈姆立克法">
+			<Dialogue name="【旁白】">你使用了哈姆立克法，戳中了裂痕的交會處。</Dialogue>
+			<Dialogue name="【旁白】">（轟）</Dialogue>
+			<Dialogue name="【旁白】">（你把小 N 滿肚子的火發洩了出來。小 N 被解救了）</Dialogue>
+			<Dialogue name="【旁白】" pic="尼斯湖水怪3">尼斯湖水怪被你的創舉燒死了！</Dialogue>
+			<Dialogue name="【通知】" pic="尼斯湖水怪的精髓">獲得尼斯湖水怪的精髓。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 成功過了這關。</Dialogue>
+			<ChangePath name="Chapter2-1"></ChangePath>
 		</Option1>
-		<Option2 name="PLACE">
-			<Dialogue name="【Barbie】">恭喜你答對啦！</Dialogue>
-			<Dialogue name="【通知】" pic="大肌肌 Ken">獲得隊友—— Barbie 的男朋友，大肌肌 Ken。</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著塑膠製的猛男繼續向下走，或許你能嘗試摸摸他的腹肌。</Dialogue>
-			<ChangePath name ="Chapter2-2"></ChangePath>
+		<Option2 name="灑水降溫法">
+			<Dialogue name="【旁白】">你使用了灑水降溫法，把水壺裡面的水倒在了小 N 身上。</Dialogue>
+			<Dialogue name="【旁白】">水加劇了熱漲冷縮的效應。</Dialogue>
+			<Dialogue name="【旁白】">（碎裂）</Dialogue>
+			<Dialogue name="【旁白】">（水把火滅了）</Dialogue>
+			<Dialogue name="【旁白】">水泥碎裂，一切都沒發生，小 N 變回了原狀。</Dialogue>
+			<Dialogue name="【通知】" pic="水泥碎片">獲得水泥碎片。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">好啦看在你那麼機智的份上，我就暫時放了你們兩個吧！</Dialogue>
+			<ChangePath name="Chapter2-2"></ChangePath>
 		</Option2>
-		<Option3 name="PATCH">
-			<Dialogue name="【Barbie】">這麼簡單的題目都答不出來，還想來探險？好險沒有把我的助手交給你們。這裡太危險了，你們還是回去吧！</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">你們決定不聽 Barbie 的話繼續前進，但中途你們遇上了滾落的巨石，沒有 Ken 能幫你們抬住，你們被壓扁了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option3 name="激將法">
+			<Dialogue name="【旁白】">（小 N 炸開，變為人型）</Dialogue>
+			<Dialogue name="【小 N】">沒想到你居然敢跟我槓架！我都已經燒成這樣了你忍心嗎！！</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">（小 N 招來了凱米颱風，你被颱風捲走了）</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
 		</Option3>
-		<Option4 name="POST">
-			<Dialogue name="【Barbie】">這麼簡單的題目都答不出來，還想來探險？好險沒有把我的助手交給你們。這裡太危險了，你們還是回去吧！</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">你們決定不聽 Barbie 的話繼續前進，但中途你們遇上了滾落的巨石，沒有 Ken 能幫你們抬住，你們被壓扁了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+	</Chapter1-1-2>
+
+
+	<Chapter1-2>
+		<Background pic="粉紅房間"></Background>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">你選擇了水質清澈的水道。水毫不留情地把你沖了下去。映入眼簾的是乾乾淨淨的房間。</Dialogue>
+		<Dialogue name="【旁白】">房間看起來毫無異常。突然從上面出現了一位美人魚公主。</Dialogue>
+		<Dialogue name="【美人魚公主】" pic="人魚公主1">你好，要不要和我一起互動呢？</Dialogue>
+		<Dialogue name="【小 N】">……（點頭）</Dialogue>
+		<Dialogue name="【美人魚公主】" pic="人魚公主2">太好了！你說你是來探險的？</Dialogue>
+		<Dialogue name="【美人魚公主】">看在你陪我聊天的份上，如果你能答對這道題目，我就讓一位得力助手跟著你吧！</Dialogue>
+		<Dialogue name="【旁白】">在 Linux 中，用於顯示當前工作目錄的指令是？</Dialogue>
+		<Option1 name="whereami">
+			<Dialogue name="【旁白】">說出此答案後，甚麼事都沒發生。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option1>
+		<Option2 name="ld">
+			<Dialogue name="【旁白】">說出此答案後，甚麼事也沒發生。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option2>
+		<Option3 name="pwd">
+			<Dialogue name="【旁白】">你答出了正確答案。</Dialogue>
+			<Dialogue name="【通知】" pic="大肌肌 Ken">獲得隊友——塑膠大肌肌 Ken。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著塑膠製的猛男繼續向下走。</Dialogue>
+			<ChangePath name="Chapter2-3"></ChangePath>
+		</Option3>
+		<Option4 name="crd">
+			<Dialogue name="【旁白】">說出此答案後，甚麼事都沒發生。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
 		</Option4>
 	</Chapter1-2>
 
 	<Chapter2-1>
-		<Background pic = "繼續前行"></Background>
-		<Dialogue name="【旁白】">成功寫下奧本海默要的答案後，你與夥伴們前進，迎接你們的是綿長的階梯，你們小心翼翼的沿著階梯向下。</Dialogue>
-		<Background pic = "湖"></Background>
-		<Dialogue name="【旁白】">忽然前方傳來流水聲，你們看到一池水，旁邊立了告示牌「投幣式」。</Dialogue>
-		<Dialogue name="【旁白】">水很暗也很深，你們不敢貿然游過去，只好選擇一種硬幣投入。</Dialogue>
-		<Option1 name="投入塑膠硬幣">
-			<Dialogue name="【通知】" pic="塑膠硬幣">你投入了塑膠硬幣。</Dialogue>
-			<Dialogue name="【旁白】">投入塑膠硬幣之後，水中忽然泛起了微小的波動，一位穿著華麗的女子浮出水面，看起來有些生氣。</Dialogue>
-			<Dialogue name="【女子】" pic="下水道女神_生氣">我是下水道女神，請不要亂丟垃圾！投幣也要投值錢的……咳咳，為了懲罰你們，你們必須答出我的問題。</Dialogue>
-			<ChangePath name ="Q1"></ChangePath>
+		<Background pic="湖"></Background>
+		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
+		<Option1 name="要">
+			<ChangePath name="book1-1"></ChangePath>
 		</Option1>
-		<Option2 name="投入鐵製硬幣">
-			<Dialogue name="【通知】" pic="鐵製硬幣">你投入了鐵製硬幣。</Dialogue>
-			<Dialogue name="【旁白】">投入鐵製硬幣之後，水中忽然泛起了微小的波動，一位穿著華麗的女子浮出水面。</Dialogue>
-			<Dialogue name="【女子】" pic="下水道女神">我是下水道女神，請問你們丟的是這枚金硬幣，還是銀硬幣呢？</Dialogue>
-			<Option1 name="金硬幣！">
-				<Dialogue name="【下水道女神】" pic="下水道女神_生氣">就知道你們不誠實，我要懲罰你們，你們必須答出我的問題，若沒有回答正確，你們就必須幫我打掃整條下水道！</Dialogue>
-				<ChangePath name ="Q1"></ChangePath>
-			</Option1>
-			<Option2 name="銀硬幣！">
-				<Dialogue name="【下水道女神】" pic="下水道女神_生氣">就知道你們不誠實，我要懲罰你們，你們必須答出我的問題，若沒有回答正確，你們就必須幫我打掃整條下水道！</Dialogue>
-				<ChangePath name ="Q1"></ChangePath>
-			</Option2>
-			<Option3 name="兩個硬幣都是我丟的！" pic="下水道女神_生氣">
-				<Dialogue name="【下水道女神】">就知道你們不誠實，我要懲罰你們，你們必須答出我的問題，若沒有回答正確，你們就必須幫我打掃整條下水道！</Dialogue>
-				<ChangePath name ="Q1"></ChangePath>
-			</Option3>
-			<Option4 name="不是，我丟的是鐵製硬幣">
-				<Dialogue name="【下水道女神】">真是誠實的好孩子，這樣吧，要是你們答出正確答案，我就將三枚硬幣都給你們！</Dialogue>
-				<ChangePath name ="Q2"></ChangePath>
-			</Option4>
+		<Option2 name="不要">
+			<ChangePath name="Chapter3-1"></ChangePath>
 		</Option2>
 	</Chapter2-1>
 
-	<Q1>
-		<Dialogue name="【下水道女神】">下列哪個產品的的吉祥物動物品種是正確的？</Dialogue>
-		<Option1 name="Docker: 海豚">
-			<Background pic = "全黑"></Background>
-			<Dialogue name="【旁白】" pic="clean">女神得到錯誤答案後，生氣的把你們丟進下水道。</Dialogue>
-			<Dialogue name="【旁白】">你們逃不出髒亂的下水道，並且生病死去了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+	<book1-1>
+		<Background pic="書"></Background>
+		<Dialogue name="【旁白】">凱米颱風生成才三天。</Dialogue>
+		<Dialogue name="【旁白】">就要往我們台灣筆直衝刺。</Dialogue>
+		<Background pic="颱風撞山"></Background>
+		<Dialogue name="【旁白】">就為了騎在台灣那粗大的中央山脈上。</Dialogue>
+		<Dialogue name="【旁白】">我已經預想到了。</Dialogue>
+		<Dialogue name="【凱米】">雜魚❤️雜魚❤️就憑這個雜魚山脈也想要阻止我嗎？</Dialogue>
+		<Dialogue name="【中央山脈】">少瞧不起人了，我只是還沒有使出全力！</Dialogue>
+		<Dialogue name="【凱米】">少嘴硬了❤️來吧來吧，快點ㄆㄧㄩ❤️ㄆㄧㄩ❤️的土石流吧❤️</Dialogue>
+		<Dialogue name="【旁白】">此時經過了台灣最高峰——玉山。</Dialogue>
+		<Dialogue name="【旁白】">請問玉山多高？</Dialogue>
+		<Option1 name="3952 km">
+			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
+			<ChangePath name="book1-1">10</ChangePath>
 		</Option1>
-		<Option2 name="Rust: 蠍子">
-			<Background pic = "全黑"></Background>
-			<Dialogue name="【旁白】" pic="clean">女神得到錯誤答案後，生氣的把你們丟進下水道。</Dialogue>
-			<Dialogue name="【旁白】">你們逃不出髒亂的下水道，並且生病死去了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option2 name="3952 m">
+			<ChangePath name="book1-2"></ChangePath>
 		</Option2>
-		<Option3 name="Linux: 企鵝">
-			<Dialogue name="【旁白】" pic="clean">女神得到正確答案後，使水面浮出一道小橋，默默的離開了。</Dialogue>
-			<ChangePath name ="Chapter3-2"></ChangePath>
+		<Option3 name="3925 m">
+			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
+			<ChangePath name="book1-1">10</ChangePath>
 		</Option3>
-		<Option4 name="Go: 袋鼠">
-			<Background pic = "全黑"></Background>
-			<Dialogue name="【旁白】" pic="clean">女神得到錯誤答案後，生氣的把你們丟進下水道。</Dialogue>
-			<Dialogue name="【旁白】">你們逃不出髒亂的下水道，並且生病死去了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option4 name="3925 km">
+			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
+			<ChangePath name="book1-1">10</ChangePath>
 		</Option4>
-	</Q1>
+	</book1-1>
 
-	<Q2>
-		<Dialogue name="【下水道女神】">下列哪個產品的的吉祥物動物品種是正確的？</Dialogue>
-		<Option1 name="Docker: 海豚">
-			<Dialogue name="【旁白】" pic="clean">女神得到答案後，拿給了你們一個黑色硬幣，上面印有一張哭臉。並且很失望的離開了。</Dialogue>
-			<Dialogue name="【旁白】">正當你們還在觀察硬幣時，它從你們的手中竄出神秘靈魂，把你們的靈魂也一起帶走了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+	<book1-2>
+		<Background pic="颱風撞山"></Background>
+		<Dialogue name="【凱米】">啊❤️等⋯等等⋯⋯你怎麼突然變得這麼大！不行不行，要⋯要變弱颱了啊阿阿阿S。</Dialogue>
+		<Dialogue name="【中央山脈】">這才是我的全力！雖然台灣的土地很小，一直一直被別的國家嘲笑，但是！我的中央山脈可是很大的！！！給我變弱吧！！！</Dialogue>
+		<Dialogue name="【凱米】">啊啊啊啊❤️我的颱風眼擴的好大❤️弱颱⋯弱颱⋯❤️要弱颱了啊啊啊啊啊❤️</Dialogue>
+		<Dialogue name="【旁白】">因為承受不住中央山脈的攻勢而變得衰弱的凱米那狂風暴雨也緩和了下來。</Dialogue>
+		<Dialogue name="【作者】">此時我正望著窗外的彩虹，將嘴裡的菸拿了下來，吐了一口氣。</Dialogue>
+		<Dialogue name="【作者】">我到底寫了三小。</Dialogue>
+		<Dialogue name="【旁白】">請問他到底寫了三小？</Dialogue>
+		<Option1 name="不知道">
+			<Dialogue name="【通知】" pic="寶典秘笈">你獲得了這本寶典秘笈。</Dialogue>
+			<ChangePath name="Chapter3-1"></ChangePath>
 		</Option1>
-		<Option2 name="Rust: 蠍子">
-			<Dialogue name="【旁白】" pic="clean">女神得到答案後，拿給了你們一個黑色硬幣，上面印有一張哭臉。並且很失望的離開了。</Dialogue>
-			<Dialogue name="【旁白】">正當你們還在觀察硬幣時，它從你們的手中竄出神秘靈魂，把你們的靈魂也一起帶走了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
-		</Option2>
-		<Option3 name="Linux: 企鵝">
-			<Dialogue name="【旁白】" pic="clean">女神得到正確答案後，愉悅地將金、銀、鐵三枚硬幣送給你們，並且使水面浮出一道小橋，你們選擇繼續前行。</Dialogue>
-			<Dialogue name="【通知】" pic="三枚硬幣">獲得三枚硬幣。</Dialogue>
-			<ChangePath name ="Chapter3-2"></ChangePath>
-		</Option3>
-		<Option4 name="Go: 袋鼠">
-			<Dialogue name="【旁白】" pic="clean">女神得到答案後，拿給了你們一個黑色硬幣，上面印有一張哭臉。並且很失望的離開了。</Dialogue>
-			<Dialogue name="【旁白】">正當你們還在觀察硬幣時，它從你們的手中竄出神秘靈魂，把你們的靈魂也一起帶走了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
-		</Option4>
-	</Q2>
+	</book1-2>
 
 	<Chapter2-2>
-		<Background pic = "繼續前行"></Background>
-		<Dialogue name="【旁白】">與芭比道別後，你與夥伴們前進，迎接你們的是綿長的階梯，你們小心翼翼的沿著階梯向下。</Dialogue>
-		<Dialogue name="【旁白】">途中，Ken 踩到一包紅包，好奇的他彎身撿起，你們來不及阻止，便見紅包掉出一塊木頭。（註：路上遇到紅包請不要亂撿）</Dialogue>
-		<Background pic = "全黑"></Background>
-		<Dialogue name="【旁白】">四周頓時陰風陣陣，手電筒閃爍幾下就沒了電，你隱約聽到了哭聲。</Dialogue>
-		<Dialogue name="【某哭聲】" pic="皮諾丘">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</Dialogue>
-		<Dialogue name="【皮諾丘】">大家都知道，Google 的商標有六個字，四種顏色。那如果把兩種重複出現的顏色混在一起，會變成什麼顏色？</Dialogue>
-		<Option1 name="紫色">
-			<Dialogue name="【旁白】" pic="clean">皮諾丘得知真相之後，送給你們 bonk 柴犬卡，並心滿意足的地離去了，手電筒也恢復正常，你們選擇繼續前行。</Dialogue>
-			<Dialogue name="【通知】" pic="bonk 柴犬">獲得一隻 bonk 柴犬卡。</Dialogue>
-			<Background pic = "繼續前行"></Background>
-			<ChangePath name ="Chapter3-3"></ChangePath>
+		<Background pic="湖"></Background>
+		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
+		<Option1 name="要">
+			<ChangePath name="book2-1"></ChangePath>
 		</Option1>
-		<Option2 name="綠色">
-			<Dialogue name="【皮諾丘】">怎麽會是這樣！我要毀了這個世界！！！</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">皮諾丘把這個世界給毀了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option2 name="不要">
+			<ChangePath name="Chapter3-2"></ChangePath>
 		</Option2>
-		<Option3 name="橘色">
-			<Dialogue name="【皮諾丘】">怎麽會是這樣！我要毀了這個世界！！！</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">皮諾丘把這個世界給毀了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
-		</Option3>
-		<Option4 name="青色">
-			<Dialogue name="【皮諾丘】">怎麽會是這樣！我要毀了這個世界！！！</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">皮諾丘把這個世界給毀了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
-		</Option4>
 	</Chapter2-2>
 
-	<Chapter3-1>
-		<Background pic = "繼續前行"></Background>
-		<Dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
-		<Background pic = "普通的門"></Background>
-		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
-		<Background pic = "普通房間"></Background>
-		<Dialogue name="【修女】">你們來的正好，自從我聽了那條魚的事蹟，就天天睡不著，你們能幫我尋找安眠藥嗎？</Dialogue>
-		<Background pic = "寶箱房間"></Background>
-		<Dialogue name="【旁白】">你們決定幫修女尋找安眠藥，結果在房屋裡看到一個上鎖的箱子。</Dialogue>
-		<Dialogue name="【旁白】">箱子上的指引表示必須回答箱子上的問題，才能打開它，據修女所知，只有一個箱子說的是真話。</Dialogue>
-		<Dialogue name="【旁白】">下列何者是 Android 版本中沒有使用的代號？</Dialogue>
-		<Option1 name="Macaron（馬卡龍）">
-			<Dialogue name="【旁白】">箱子打開後，果然是修女要找的安眠藥，她非常感謝你們，決定送你們一條魚——或許不是傳說中的那條。</Dialogue>
-			<Dialogue name="【通知】" pic="一條會旋轉的魚">獲得一條會旋轉的魚。</Dialogue>
-			<Dialogue name="【旁白】">與修女道別之後，你們選擇繼續前進。</Dialogue>
-			<ChangePath name ="Boss1"></ChangePath>
+	<book2-1>
+		<Background pic="颱風撞山"></Background>
+		<Dialogue name="【旁白】">凱米颱風生成才三天。</Dialogue>
+		<Dialogue name="【旁白】">就要往我們台灣筆直衝刺。</Dialogue>
+		<Dialogue name="【旁白】">就為了騎在台灣那粗大的中央山脈上。</Dialogue>
+		<Dialogue name="【旁白】">我已經預想到了。</Dialogue>
+		<Dialogue name="【凱米】">雜魚❤️雜魚❤️就憑這個雜魚山脈也想要阻止我嗎？</Dialogue>
+		<Dialogue name="【中央山脈】">少瞧不起人了，我只是還沒有使出全力！</Dialogue>
+		<Dialogue name="【凱米】">少嘴硬了❤️來吧來吧，快點ㄆㄧㄩ❤️ㄆㄧㄩ❤️的土石流吧❤️</Dialogue>
+		<Dialogue name="【旁白】">此時經過了台灣最高峰——玉山。</Dialogue>
+		<Dialogue name="【旁白】">請問玉山多高？</Dialogue>
+		<Option1 name="3952 km">
+			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
+			<ChangePath name="book2-1">9</ChangePath>
 		</Option1>
-		<Option2 name="Cupcake（杯子蛋糕）">
-			<Dialogue name="【旁白】">箱子打開後是滿滿的食人魚，你們被咬得體無完膚。修女笑了一聲便離開了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option2 name="3952 m">
+			<ChangePath name="book2-2">0</ChangePath>
 		</Option2>
-		<Option3 name="Ice Cream Sandwich（冰淇淋三明治）">
-			<Dialogue name="【旁白】">箱子打開後是滿滿的食人魚，你們被咬得體無完膚。修女笑了一聲便離開了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option3 name="3925 m">
+			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
+			<ChangePath name="book2-1">9</ChangePath>
 		</Option3>
-		<Option4 name="Oreo">
-			<Dialogue name="【旁白】">箱子打開後是滿滿的食人魚，你們被咬得體無完膚。修女笑了一聲便離開了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option4 name="3925 km">
+			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
+			<ChangePath name="book2-1">9</ChangePath>
+		</Option4>
+	</book2-1>
+
+	<book2-2>
+		<Background pic="颱風撞山"></Background>
+		<Dialogue name="【凱米】">啊❤️等⋯等等⋯⋯你怎麼突然變得這麼大！不行不行，要⋯要變弱颱了啊阿阿阿S。</Dialogue>
+		<Dialogue name="【中央山脈】">這才是我的全力！雖然台灣的土地很小，一直一直被別的國家嘲笑，但是！我的中央山脈可是很大的！！！給我變弱吧！！！</Dialogue>
+		<Dialogue name="【凱米】">啊啊啊啊❤️我的颱風眼擴的好大❤️弱颱⋯弱颱⋯❤️要弱颱了啊啊啊啊啊❤️</Dialogue>
+		<Dialogue name="【旁白】">因為承受不住中央山脈的攻勢而變得衰弱的凱米那狂風暴雨也緩和了下來。</Dialogue>
+		<Dialogue name="【作者】">此時我正望著窗外的彩虹，將嘴裡的菸拿了下來，吐了一口氣。</Dialogue>
+		<Dialogue name="【作者】">我到底寫了三小。</Dialogue>
+		<Dialogue name="【旁白】" pic="尼斯湖水怪1">看完這本書之後，尼斯湖水怪突然又出現在面前。</Dialogue>
+		<Dialogue name="【旁白】">你和小N嚇到。</Dialogue>
+		<Dialogue name="【水怪】">嘿嘿嘿這裡就是我家，答對問題就給你這本書吧~</Dialogue>
+		<Dialogue name="【旁白】">多重繼承（Multiple Inheritance）在 C++ 中可能導致什麼問題？</Dialogue>
+		<Option1 name="記憶體洩漏">
+			<Dialogue name="【旁白】" pic="clean">你被天外飛過來的石頭打中了腦袋，就此喪命。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option1>
+		<Option2 name="虛擬函數錯誤">
+			<Dialogue name="【旁白】" pic="clean">你被天外飛過來的石頭打中了腦袋，就此喪命。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option2>
+		<Option3 name="菱形繼承問題">
+			<Dialogue name="【通知】" pic="寶典秘笈">你獲得了這本寶典秘笈。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">你繼續向前行。</Dialogue>
+			<ChangePath name="Chapter3-2"></ChangePath>
+		</Option3>
+		<Option4 name="型別轉換錯誤">
+			<Dialogue name="【旁白】" pic="clean">你被天外飛過來的石頭打中了腦袋，就此喪命。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option4>
+	</book2-2>
+
+	<Chapter2-3>
+		<Background pic="河床"></Background>
+		<Dialogue name="【旁白】">與美人魚公主道別後，被流水沖到了河床。適逢枯水期，到了中游沒水了。</Dialogue>
+		<Dialogue name="【旁白】">在中游時，一抹探頭探腦的身影引起了你的注意，你來不及多想。</Dialogue>
+		<Dialogue name="【旁白】">轉頭就看見 Ken 開始低頭，並從河床撿起一包紅包，來不及阻止，便見紅包內掉出一片榕樹葉。</Dialogue>
+		<Dialogue name="【旁白】">（註：路上遇到紅包請不要亂撿）</Dialogue>
+		<Dialogue name="【通知】" pic="紅包">獲得紅包。</Dialogue>
+		<Background pic="全黑"></Background>
+		<Dialogue name="【旁白】">四周頓時陰風陣陣，在你面前遠方突然一道閃電劃破了天際。</Dialogue>
+		<Dialogue name="【旁白】">你隱約聽到了哭聲。</Dialogue>
+		<Dialogue name="【某哭聲】" pic="皮諾丘1">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</Dialogue>
+		<Dialogue name="【皮諾丘】" pic="皮諾丘2">大家都知道，如果我說謊，我的鼻子就會變長，若否，則鼻子安然無恙。但如果我說：「我的鼻子要變長了！」，那麼，我的鼻子是會忽長忽短？變長？還是無事發生呢？</Dialogue>
+		<Dialogue name="【皮諾丘】" pic="皮諾丘1">他人擔心我說出這句話之後，鼻子忽長忽短，而我會調皮地拿這件事戲弄他人，就將我燒毀了，你們一定要找到事情真相？我是枉死的嗎？</Dialogue>
+		<Option1 name="是，你是枉死的，你的鼻子根本不會變長！">
+			<Dialogue name="【旁白】">大肌肌 Ken 答對了問題。</Dialogue>
+			<Dialogue name="【皮諾丘】" pic="皮諾丘3">你是電 你是光 你是唯一的神話！你也領了我的紅包，不能說不要跟我結婚！我跟你走~</Dialogue>
+			<Dialogue name="【通知】" pic="戀愛腦的皮諾丘">獲得戀愛腦的皮諾丘一位。</Dialogue>
+			<Background pic="繼續前行"></Background>
+			<ChangePath name="Chapter3-3"></ChangePath>
+		</Option1>
+		<Option2 name="是，你是枉死的，你的鼻子會變長！">
+			<Dialogue name="【旁白】">你答錯了喔！再試試看吧！</Dialogue>
+			<ChangePath name="Chapter2-3">10</ChangePath>
+		</Option2>
+		<Option3 name="否，你的鼻子確實會忽長忽短！">
+			<Dialogue name="【旁白】">你答錯了喔！再試試看吧！</Dialogue>
+			<ChangePath name="Chapter2-3">10</ChangePath>
+		</Option3>
+	</Chapter2-3>
+
+	<Chapter3-1>
+		<Background pic="繼續前行"></Background>
+		<Dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
+		<Background pic="普通的門"></Background>
+		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
+		<Background pic="普通房間"></Background>
+		<Dialogue name="【修女】">你們來的正好，自從我聽了那條魚的事蹟，就天天睡不著，你們能幫我尋找安眠藥嗎？</Dialogue>
+		<Background pic="寶箱房間"></Background>
+		<Dialogue name="【旁白】">你們決定幫修女尋找安眠藥，結果在房屋裡看到一個上鎖的箱子。</Dialogue>
+		<Dialogue name="【旁白】">箱子上的指引表示必須回答箱子上的問題，才能打開它。</Dialogue>
+		<Dialogue name="【旁白】">SSH 是？</Dialogue>
+		<Option1 name="Switch Shell">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-1-1-2nd"></ChangePath>
+		</Option1>
+		<Option2 name="Secure System Handler">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-1-1-2nd"></ChangePath>
+		</Option2>
+		<Option3 name="Standar">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-1-1-2nd"></ChangePath>
+		</Option3>
+		<Option4 name="Secure Shell">
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
 		</Option4>
 	</Chapter3-1>
 
-	<Chapter3-2>
-		<Background pic = "繼續前行"></Background>
-		<Dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
-		<Background pic = "普通的門"></Background>
-		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
-		<Background pic = "普通房間"></Background>
-		<Dialogue name="【阿偉】">來的正好，可以幫我找阿罵藏起來的一百塊嗎？我想偷偷拿去跟彬彬打遊戲。</Dialogue>
-		<Background pic = "寶箱房間"></Background>
-		<Dialogue name="【旁白】">你們決定幫阿偉尋找一百元，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</Dialogue>
-		<Dialogue name="【旁白】">你和阿罵在 GitHub 協作網頁前端專案，阿罵因為打錯字後悔做了 git push --force，現在你落後一個提交，但也超前一個提交。</Dialogue>
-		<Dialogue name="【旁白】">請問這時候該打什麼指令才能更新成阿罵修好的版本？（假設專案用 GitHub，預設設定）。</Dialogue>
-		<Option1 name="git push --force">
-			<Dialogue name="【旁白】" pic ="clean">打開箱子發現阿罵躲在裡面，阿偉默默的溜走了。</Dialogue>
-			<Dialogue name="【阿偉的阿罵】">你毀了我的專案！</Dialogue>
-			<Dialogue name="【旁白】" pic ="clean">生氣的阿罵把你們叫去房間讀書一輩子。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+	<Q3-1-1-2nd>
+		<Dialogue name="【旁白】">SSH 是？</Dialogue>
+		<Option1 name="Switch Shell">
+			<Dialogue name="【旁白】" pic="clean">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
 		</Option1>
-		<Option2 name="git pull">
-			<Dialogue name="【旁白】" pic ="clean">打開箱子發現阿罵躲在裡面，阿偉默默的溜走了。</Dialogue>
-			<Dialogue name="【阿偉的阿罵】">你毀了我的專案！</Dialogue>
-			<Dialogue name="【旁白】" pic ="clean">生氣的阿罵把你們叫去房間讀書一輩子。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option2 name="Secure System Handler">
+			<Dialogue name="【旁白】">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
 		</Option2>
-		<Option3 name="git commit -m &quot;切掉阿罵的手&quot;">
-			<Dialogue name="【旁白】" pic ="clean">打開箱子發現阿罵躲在裡面，阿偉默默的溜走了。</Dialogue>
-			<Dialogue name="【阿偉的阿罵】">你毀了我的專案！</Dialogue>
-			<Dialogue name="【旁白】" pic ="clean">生氣的阿罵把你們叫去房間讀書一輩子。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option3 name="Standar">
+			<Dialogue name="【旁白】">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
 		</Option3>
-		<Option4 name="git reset origin/main">
-			<Dialogue name="【旁白】">箱子打開後，果然是阿偉要找的一百元，他非常高興地替你們開了門，自己則跑去找彬彬了。</Dialogue>
-			<Dialogue name="【通知】" pic ="阿偉的阿罵">獲得阿偉的阿罵。</Dialogue>
-			<Dialogue name="【旁白】">與阿偉道別之後，你們選擇繼續前進。</Dialogue>
-			<ChangePath name ="Boss2"></ChangePath>
+		<Option4 name="Secure Shell">
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
 		</Option4>
+	</Q3-1-1-2nd>
+
+	<Q3-1-2>
+		<Dialogue name="【旁白】">在 Java 中，哪種情況下會導致記憶體洩漏？</Dialogue>
+		<Option1 name=" 在 try-finally 塊中未能關閉文件流">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
+		</Option1>
+		<Option2 name="使用 StringBuilder 而非 StringBuffer">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
+		</Option2>
+		<Option3 name="靜態變數持有不再需要的對象引用">
+			<Dialogue name="【旁白】">箱子打開後，果然是修女要找的安眠藥，她非常感謝你們，決定送你們一條魚——或許不是傳說中的那條。</Dialogue>
+			<Dialogue name="【通知】" pic="一條會旋轉的魚">獲得一條會旋轉的魚</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">與修女道別之後，你們選擇繼續前進。</Dialogue>
+			<ChangePath name="Boss1"></ChangePath>
+		</Option3>
+		<Option4 name="過度使用 final 關鍵字">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
+		</Option4>
+	</Q3-1-2>
+
+	<Chapter3-2>
+		<Background pic="繼續前行"></Background>
+		<Dialogue name="【旁白】">拿到了這本書之後，旁邊出現了一個通回台北科技大學的指標，你和小N走了進去。</Dialogue>
+		<Background pic="普通的門"></Background>
+		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
+		<Background pic="普通房間"></Background>
+		<Dialogue name="【阿偉】">來的正好，可以幫我找奶奶藏起來的一百塊嗎？我想偷偷拿去跟彬彬打遊戲。不要跟我奶奶說喔！我再送你們一個小禮物。</Dialogue>
+		<Dialogue name="【旁白】">你願意幫阿偉開箱找錢嗎？</Dialogue>
+		<Option1 name="願意">
+			<Dialogue name="【旁白】">你們決定幫阿偉尋找一百元，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</Dialogue>
+			<ChangePath name="Chapter3-2-1"></ChangePath>
+		</Option1>
 	</Chapter3-2>
+	
+	<Chapter3-2-1>
+		<Background pic="寶箱房間"></Background>
+		<Dialogue name="【旁白】">在 Windows Server 中，如何使用 Active Directory (AD) 進行權限管理？</Dialogue>
+		<Option1 name="只能通過手動設定每個使用者的權限">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-2-1-2nd"></ChangePath>
+		</Option1>
+		<Option2 name="使用群組策略來批量管理使用者權限">
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-2-2"></ChangePath>
+		</Option2>
+		<Option3 name="僅能在單一域內設定權限">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-2-1-2nd"></ChangePath>
+		</Option3>
+		<Option4 name="AD 無法管理使用者權限">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-2-1-2nd"></ChangePath>
+		</Option4>
+	</Chapter3-2-1>
+
+	<Q3-2-1-2nd>
+		<Dialogue name="【旁白】">在 Windows Server 中，如何使用 Active Directory (AD) 進行權限管理？</Dialogue>
+		<Option1 name="只能通過手動設定每個使用者的權限">
+			<Dialogue name="【旁白】" pic="clean">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option1>
+		<Option2 name="使用群組策略來批量管理使用者權限">
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
+		</Option2>
+		<Option3 name="僅能在單一域內設定權限">
+			<Dialogue name="【旁白】">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option3>
+		<Option4 name="AD 無法管理使用者權限">
+			<Dialogue name="【旁白】">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option4>
+	</Q3-2-1-2nd>
+
+	<Q3-2-2>
+		<Dialogue name="【旁白】">在 Linux 中，cron 是用來做什麼的？</Dialogue>
+		<Option1 name="管理使用者密碼">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-2-2"></ChangePath>
+		</Option1>
+		<Option2 name="控制文件存取權限">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-2-2"></ChangePath>
+		</Option2>
+		<Option3 name="調度和執行週期性任務">
+			<Dialogue name="【旁白】">箱子打開後，果然是阿偉要找的一百元，他非常高興地替你們開了門，自己則跑去找彬彬了。</Dialogue>
+			<Dialogue name="【通知】" pic="阿偉的阿罵">獲得阿偉的阿罵。</Dialogue>
+			<Dialogue name="【通知】" pic="大香蕉">獲得小禮物「大香蕉」。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">與阿偉道別之後，你們選擇繼續前進。</Dialogue>
+			<ChangePath name="Boss2"></ChangePath>
+		</Option3>
+		<Option4 name="儲存系統日誌">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-2-2"></ChangePath>
+		</Option4>
+	</Q3-2-2>
 
 	<Chapter3-3>
-		<Dialogue name="【旁白】">得到一隻奇怪柴犬之後，你與夥伴們前進，迎接你們的依然是長長的階梯。</Dialogue>
-		<Background pic = "普通的門"></Background>
+		<Dialogue name="【旁白】">得到一隻戀愛腦的皮諾丘之後，你與夥伴們前進，迎接你們的變成了長長的階梯。</Dialogue>
+		<Background pic="普通的門"></Background>
 		<Dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通房門，這次門沒上鎖，你們勇敢地打開了門。</Dialogue>
-		<Background pic = "普通房間"></Background>
+		<Background pic="普通房間"></Background>
 		<Dialogue name="【雹哥】" pic="雹哥">我是爆哥的頭號粉絲雹哥，你們有看到我的咖哩拌飯嗎？我還沒吃，它就大叫一聲跑掉了。</Dialogue>
-		<Background pic = "寶箱房間"></Background>
+		<Background pic="寶箱房間"></Background>
 		<Dialogue name="【旁白】">你們決定幫他尋找咖哩拌飯，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</Dialogue>
-		<Dialogue name="【旁白】">台灣男性平均身高約 173 公分。設一個男性身高 height，怎麽在 Python 正確的判斷一位男性高不高？（註：選項塞不下空格請見諒）</Dialogue>
-		<Option1 name="is_tall=height>=173?true:false">
-			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
-			<Dialogue name="【旁白】">身高 169 的雹哥傷心地大聲尖叫，你們的身體承受不住而被震暈了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Dialogue name="【旁白】">在 C 語言中，指標和陣列之間的關係是什麼？</Dialogue>
+		<Option1 name="指標可以動態分配內存，而陣列不行">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-3-1-2nd"></ChangePath>
 		</Option1>
-		<Option2 name="is_tall=True if height>=173 else False">
-			<Dialogue name="【旁白】">箱子打開後，果然是雹哥的咖哩拌飯，他非常感謝你們，決定將咖哩拌飯送給你們。</Dialogue>
-			<Dialogue name="【通知】" pic="會尖叫的咖哩拌飯">獲得會叫的咖哩拌飯。</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">與雹哥道別之後，你們選擇繼續前進。</Dialogue>
-			<ChangePath name ="Boss3"></ChangePath>
+		<Option2 name="陣列名稱是一個指向其第一個元素的指標">
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-3-2"></ChangePath>
 		</Option2>
-		<Option3 name="is_tall=true if height>=173 else false">
-			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
-			<Dialogue name="【旁白】">身高 169 的雹哥傷心地大聲尖叫，你們的身體承受不住而被震暈了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option3 name="指標只能指向單一值，而陣列包含多個值">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-3-1-2nd"></ChangePath>
 		</Option3>
-		<Option4 name="is_tall=height is 173">
-			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
-			<Dialogue name="【旁白】">身高 169 的雹哥傷心地大聲尖叫，你們的身體承受不住而被震暈了。</Dialogue>
-			<ChangePath name ="GameoverScene">0</ChangePath>
+		<Option4 name="指標和陣列是完全獨立的概念，無關聯">
+			<Dialogue name="【旁白】">答錯了喔！再試一次吧！</Dialogue>
+			<ChangePath name="Q3-3-1-2nd"></ChangePath>
 		</Option4>
 	</Chapter3-3>
 
+	<Q3-3-1-2nd>
+		<Dialogue name="【旁白】">在 C 語言中，指標和陣列之間的關係是什麼？</Dialogue>
+		<Option1 name="指標可以動態分配內存，而陣列不行">
+			<Dialogue name="【旁白】" pic="clean">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option1>
+		<Option2 name="陣列名稱是一個指向其第一個元素的指標">
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-1-2"></ChangePath>
+		</Option2>
+		<Option3 name="指標只能指向單一值，而陣列包含多個值">
+			<Dialogue name="【旁白】">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option3>
+		<Option4 name="指標和陣列是完全獨立的概念，無關聯">
+			<Dialogue name="【旁白】">寶箱突然張開血盆大口，他一口把你給吞掉了。</Dialogue>
+			<ChangePath name="GameoverScene"></ChangePath>
+		</Option4>
+	</Q3-3-1-2nd>
+
+	<Q3-3-2>
+		<Dialogue name="【旁白】">在 JavaScript 中，this 關鍵字在物件方法中通常指向什麼？</Dialogue>
+		<Option1 name="當前方法所屬的物件">
+			<Dialogue name="【旁白】">箱子打開後，果然是雹哥的咖哩拌飯，他非常感謝你們，決定將咖哩拌飯送給你們。</Dialogue>
+			<Dialogue name="【通知】" pic="會尖叫的咖哩拌飯">獲得會叫的咖哩拌飯。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">與雹哥道別之後，你們選擇繼續前進。</Dialogue>
+			<ChangePath name="Boss3"></ChangePath>
+		</Option1>
+		<Option2 name="當前方法的函數對象">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-3-2"></ChangePath>
+		</Option2>
+		<Option3 name="當前方法所屬的全域物件">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-3-2"></ChangePath>
+		</Option3>
+		<Option4 name="瀏覽器窗口物件">
+			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
+			<ChangePath name="Q3-3-2"></ChangePath>
+		</Option4>
+	</Q3-3-2>
+
 	<Boss1>
-		<Background pic = "繼續前行"></Background>
+		<Background pic="繼續前行"></Background>
 		<Dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</Dialogue>
-		<Background pic = "全黑"></Background>
-		<Dialogue name="【旁白】">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是佛地魔。</Dialogue>
+		<Background pic="全黑"></Background>
+		<Dialogue name="【旁白】">忽然火把熄滅，四周狂風暴雨，朦朧中有個人出現在你們面前，正是佛地魔。</Dialogue>
 		<Dialogue name="【BOSS 出現】" pic="佛地魔">佛地魔出現了 ！</Dialogue>
-		<Dialogue name="【通知】">可使用道具</Dialogue>
-		<ChooseItem>End1</ChooseItem>
-		<Option name="一支壞掉的手電筒">
-			<Dialogue name="【通知】" pic="一支壞掉的手電筒">你選擇使用「一支壞掉的手電筒」。</Dialogue>
-			<Dialogue name="【BOSS】">你用盡全力扔出那支手電筒，佛地魔使用閃避技能，HP-0。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
+		<Dialogue name="【通知】">查看背包中的可使用道具</Dialogue>
+		<ChooseItem></ChooseItem>
+		<Option name="一支火把">
+			<Dialogue name="【通知】" pic="一支火把">你選擇使用「熄滅的火把」。</Dialogue>
+			<HPminusBoss>0.15</HPminusBoss>
+			<Dialogue name="【BOSS】">你用盡全力扔出那支火把，佛地魔被餘熱稍微燙到，HP-30。</Dialogue>
+			<CheckHP>End1</CheckHP>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">佛地魔使用法力反擊你，你暈了，你 HP-100。</Dialogue>
+			<CheckHP>End1</CheckHP>
+			<ChangePath name="Boss1">5</ChangePath>
 		</Option>
-		<Option name="bonk 柴犬">
-			<Dialogue name="【通知】" pic="bonk 柴犬">你選擇使用「bonk 柴犬」。</Dialogue>
-			<HPminus>0.5</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻柴柴，柴柴使用 Bonk 攻擊，佛地魔受到物理攻擊，因腦震盪 HP -50。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
+		<Option name="暴風圈">
+			<Dialogue name="【通知】" pic="暴風圈">你選擇使用「暴風圈」。</Dialogue>
+			<HPminusBoss>0.9</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出暴風圈。頓時狂風暴雨，佛地魔無地反擊。被大自然打敗的他 HP-180。</Dialogue>
+			<CheckHP>End1</CheckHP>
+			<ChangePath name="Boss1">5</ChangePath>
+		</Option>
+		<Option name="颱風眼">
+			<Dialogue name="【通知】" pic="颱風眼">你選擇使用「颱風眼」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出颱風眼。颱風中心無風無雨，天氣晴朗。HP-0。</Dialogue>
+			<HPminusMy>1</HPminusMy>
+			<Dialogue name="【BOSS】">因為你耍了佛地魔，他展開魔鬼般的魔法攻擊。你 HP-200。</Dialogue>
+			<CheckHP>End1</CheckHP>
+			<ChangePath name="Boss1">5</ChangePath>
+		</Option>
+		<Option name="尼斯湖水怪的精髓">
+			<Dialogue name="【通知】" pic="尼斯湖水怪的精髓">你選擇使用「尼斯湖水怪的精髓」。</Dialogue>
+			<Shield></Shield>
+			<Dialogue name="【BOSS】">你丟出了那隻死掉的水怪。在你身上產生了水怪的抗體，抵抗敵人的一次攻擊。</Dialogue>
+			<ChangePath name="Boss1">5</ChangePath>
+		</Option>
+		<Option name="寶典秘笈">
+			<Dialogue name="【通知】" pic="寶典秘笈">你選擇使用「寶典祕笈」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出了寶典祕笈。佛地魔瞬間被凱米與中央山脈的愛情史給迷住了。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【旁白】">佛地魔此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<CheckHP>End1</CheckHP>
+			<ChangePath name="Boss1">5</ChangePath>
 		</Option>
 		<Option name="一條會旋轉的魚">
 			<Dialogue name="【通知】" pic="一條會旋轉的魚">你選擇使用「一條會旋轉的魚」。</Dialogue>
-			<HPminus>0.5</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻神奇的魚，滑滑黏黏的觸感令你不寒而慄，佛地魔受到精神加洗腦攻擊，HP -50。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
-		</Option>
-		<Option name="塑膠硬幣">
-			<Dialogue name="【通知】" pic="塑膠硬幣">你選擇使用「塑膠硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出塑膠硬幣，出現了告示牌，上面寫「禁止隨手扔垃圾」。</Dialogue>
-			<HPminus>0.05</HPminus>
-			<Dialogue name="【旁白】">生灰的告示牌舉起時，引出了一些粉塵，對佛地魔造成眼睛傷害，HP -5。</Dialogue>
-			<ChangePath name ="Boss1">6</ChangePath>
-		</Option>
-		<Option name="鐵製硬幣">
-			<Dialogue name="【通知】" pic="鐵製硬幣">你選擇使用「鐵製硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出鐵製硬幣，掉出一支上籤，上面寫著「加入NPC，四年畢業不是問題」。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+			<Dialogue name="【BOSS】">你丟出了旋轉魚。佛地魔看著那隻魚，頭暈了過去。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【旁白】">佛地魔此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<CheckHP>End1</CheckHP>
+			<ChangePath name="Boss1">5</ChangePath>
 		</Option>
 	</Boss1>
+
+	<ShieldStory>
+		<Dialogue name="【Boss】"></Dialogue>
+		<Dialogue name="【通知】" pic="盾牌">「盾牌」發揮了效果。</Dialogue>
+		<Dialogue name="【BOSS】">盾牌發出了閃耀的光芒，此時佛地魔被閃瞎，暫停了他的攻擊。</Dialogue>
+		<ChangePath name="Boss1">5</ChangePath>
+	</ShieldStory>
 
 	<End1>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了佛地魔，旋轉的魚造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
-		<Background pic = "宿舍"></Background>
+		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
-		<Dialogue name="【成就】"> 獲得結局「【極度困難版】 結局一」</Dialogue>
-		<Achievement name ="3"></Achievement>
-		<ChangePath name ="GameEndScene">0</ChangePath>
+		<Dialogue name="【成就】"> 獲得結局「【普通版】 結局一」</Dialogue>
+		<Achievement name="0"></Achievement>
+		<ChangePath name="GameEndScene">0</ChangePath>
 	</End1>
 
 	<Boss2>
-		<Background pic = "繼續前行"></Background>
+		<Background pic="繼續前行"></Background>
 		<Dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</Dialogue>
-		<Background pic = "全黑"></Background>
-		<Dialogue name="【旁白】">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是傑哥。</Dialogue>
+		<Background pic="全黑"></Background>
+		<Dialogue name="【旁白】">忽然火把熄滅，四周變得異常安靜，轉眼間有個人出現在你們面前，正是傑哥。</Dialogue>
 		<Dialogue name="【BOSS 出現】" pic="傑哥">傑哥出現了 ！</Dialogue>
-		<Dialogue name="【通知】">可使用道具</Dialogue>
-		<ChooseItem>End2</ChooseItem>
-		<Option name="一支壞掉的手電筒">
-			<Dialogue name="【通知】" pic="一支壞掉的手電筒">你選擇使用「一支壞掉的手電筒」。</Dialogue>
-			<HPminus>0.3</HPminus>
-			<Dialogue name="【BOSS】">你用盡全力扔出那支手電筒，傑哥因體積過大無法閃避，HP -30。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+		<Dialogue name="【通知】">查看背包中的可使用道具</Dialogue>
+		<ChooseItem></ChooseItem>
+		<Option name="一支火把">
+			<Dialogue name="【通知】" pic="一支火把">你選擇使用「熄滅的火把」。</Dialogue>
+			<HPminusBoss>0.4</HPminusBoss>
+			<Dialogue name="【BOSS】">你用盡全力扔出那支火把，傑哥過於龐大被打中，加上火把的餘溫燙傷，HP-80。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<HPminusMy>0.15</HPminusMy>
+			<Dialogue name="【BOSS】">他喊著不要，你耳鳴，你HP-30。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss2">5</ChangePath>
+		</Option>
+		<Option name="暴風圈">
+			<Dialogue name="【通知】" pic="暴風圈">你選擇使用「暴風圈」。</Dialogue>
+			<HPminusBoss>0.9</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出暴風圈。頓時狂風暴雨，傑哥無地反擊。被大自然打敗的他 HP-180。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">他大聲地喊著不要，你耳膜快破了，你HP-100。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss2">5</ChangePath>
+		</Option>
+		<Option name="颱風眼">
+			<Dialogue name="【通知】" pic="颱風眼">你選擇使用「颱風眼」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出颱風眼。颱風中心無風無雨，天氣晴朗。什麼事都沒發生。</Dialogue>
+			<ChangePath name="Boss2">5</ChangePath>
+		</Option>
+		<Option name="水泥碎片">
+			<Dialogue name="【通知】" pic="水泥碎片">你選擇使用「水泥碎片」。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出了水泥碎片。銳利的邊緣刮破了傑哥的肚皮，砰的一聲，肚子爆炸。HP-200。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss2">5</ChangePath>
+		</Option>
+		<Option name="寶典祕笈">
+			<Dialogue name="【通知】" pic="寶典祕笈">你選擇使用「寶典祕笈」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出了寶典祕笈。傑哥瞬間被凱米與中央山脈的愛情史給迷住了。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">傑哥此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss2">5</ChangePath>
 		</Option>
 		<Option name="阿偉的阿罵">
 			<Dialogue name="【通知】" pic="阿偉的阿罵">你選擇使用「阿偉的阿罵」。</Dialogue>
-			<HPminus>0.9</HPminus>
-			<Dialogue name="【BOSS】">你請出阿偉的阿罵，阿罵發動碎碎念攻擊，對傑哥造成精神上不可逆的傷害，HP -90，他大喊阿罵不要。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
+			<Dialogue name="【BOSS】">你派出了阿偉的阿罵當擋箭牌。</Dialogue>
+			<Dialogue name="【阿罵】">......</Dialogue>
+			<Dialogue name="【阿罵】">擦欲系（吵死人），你。</Dialogue>
+			<HPminusBoss>0.75</HPminusBoss>
+			<Dialogue name="【BOSS】">傑哥被阿罵突如其來的「教育」擊退數步。HP-150。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<HPminusMy>0.6</HPminusMy>
+			<Dialogue name="【BOSS】">你被他阿罵嚇到跌倒受傷，你 HP-120。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss2">5</ChangePath>
 		</Option>
-		<Option name="三枚硬幣">
-			<Dialogue name="【通知】" pic="三枚硬幣">你選擇使用「三枚硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出那三枚硬幣，掉出一支上上籤，上面寫著「愛情來了」。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
-		</Option>
-		<Option name="鐵製硬幣">
-			<Dialogue name="【通知】" pic="鐵製硬幣">你選擇使用「鐵製硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出鐵製硬幣，掉出一支上籤，上面寫著「加入NPC，四年畢業不是問題」。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
-		</Option>
-		<Option name="塑膠硬幣">
-			<Dialogue name="【通知】" pic="塑膠硬幣">你選擇使用「塑膠硬幣」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出塑膠硬幣，出現了告示牌，上面寫著「禁止隨手扔垃圾」。</Dialogue>
-			<HPminus>0.05</HPminus>
-			<Dialogue name="【BOSS】">生灰的告示牌舉起時，引出了一些粉塵，對傑哥造成眼睛傷害，HP -5。</Dialogue>
-			<ChangePath name ="Boss2">6</ChangePath>
-		</Option>
-		<Option name="bonk 柴犬">
-			<Dialogue name="【通知】" pic="bonk 柴犬">你選擇使用「bonk 柴犬」。</Dialogue>
-			<HPminus>0.1</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻柴柴，柴柴無法使用 Bonk 攻擊，因為那根棒球棍已經成為了湖水的橋，只能賣萌，HP -0。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+		<Option name="大香蕉">
+			<Dialogue name="【通知】" pic="大香蕉">你選擇使用「大香蕉」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出那根大香蕉。不知何來的神聖力量，香蕉長了手腳，在他們面前跳起舞。</Dialogue>
+			<Dialogue name="【BOSS】">傑哥看到了那根大香蕉，將其拿起並放到了背後......。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">傑哥露出了舒服的表情，喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
 	</Boss2>
 
 	<End2>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了傑哥，阿偉的阿罵造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
-		<Background pic = "宿舍"></Background>
+		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
-		<Dialogue name="【成就】"> 獲得結局「【極度困難版】 結局二」</Dialogue>
-		<Achievement name ="4"></Achievement>
-		<ChangePath name ="GameEndScene">0</ChangePath>
+		<Dialogue name="【成就】"> 獲得結局「【普通版】 結局二」</Dialogue>
+		<Achievement name="1"></Achievement>
+		<ChangePath name="GameEndScene">0</ChangePath>
 	</End2>
 
 	<Boss3>
-		<Background pic = "繼續前行"></Background>
+		<Background pic="繼續前行"></Background>
 		<Dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</Dialogue>
-		<Background pic = "全黑"></Background>
-		<Dialogue name="【旁白】" pic="小N_打boss">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是武藏與小次郎。</Dialogue>
+		<Background pic="全黑"></Background>
+		<Dialogue name="【旁白】" pic="小N_打boss">忽然火把熄滅，四周音樂大響，嘈雜中有個人出現在你們面前，正是武藏與小次郎。</Dialogue>
 		<Dialogue name="【BOSS 出現】" pic="武藏與小次郎">武藏與小次郎出現了 ！</Dialogue>
-		<Dialogue name="【通知】">可使用道具</Dialogue>
-		<ChooseItem>End3</ChooseItem>
-		<Option name="一支壞掉的手電筒">
-			<Dialogue name="【通知】" pic="一支壞掉的手電筒">你選擇使用「一支壞掉的手電筒」。</Dialogue>
-			<Dialogue name="【BOSS】">你用盡全力扔出那支手電筒，武藏與小次郎發動閃避功能，HP -0。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+		<Dialogue name="【通知】">查看背包中的可使用道具</Dialogue>
+		<ChooseItem></ChooseItem>
+		<Option name="一支火把">
+			<Dialogue name="【通知】" pic="一支火把">你選擇使用「熄滅的火把」。</Dialogue>
+			<Dialogue name="【BOSS】">你用盡全力扔出熄滅的火把，武藏與小次郎發動閃避功能，HP-0。</Dialogue>
+			<HPminusMy>0.005</HPminusMy>
+			<Dialogue name="【BOSS】">武藏拿出一顆精靈球丟你，你 HP -1。</Dialogue>
+			<CheckHP>End3</CheckHP>
+			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
 		<Option name="大肌肌 Ken">
-			<Dialogue name="【通知】" pic="大肌肌 Ken">你選擇使用「大肌肌 Ken」。</Dialogue>
-			<HPminus>0.7</HPminus>
-			<Dialogue name="【BOSS】">你請出大肌肌 Ken，Ken 曬出與 Barbie 的照片，愛是十萬伏特，滿滿的粉紅色泡泡對兩人造成精神攻擊，HP -70。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+			<Dialogue name="【通知】" pic="大肌肌 Ken">你選擇使用「塑膠大肌肌 Ken」。</Dialogue>
+			<HPminusBoss>0.4</HPminusBoss>
+			<Dialogue name="【BOSS】">你請出塑膠大肌肌，他曬出與皮諾丘冥婚的照片。武藏與小次郎被嚇到，精神傷害HP-80。</Dialogue>
+			<CheckHP>End3</CheckHP>
+			<HPminusMy>0.35</HPminusMy>
+			<Dialogue name="【BOSS】">這時你卻被潛伏後方的喵貓用利爪攻擊，HP -70。</Dialogue>
+			<CheckHP>End3</CheckHP>
+			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
-		<Option name="bonk 柴犬">
-			<Dialogue name="【通知】" pic="bonk 柴犬">你選擇使用「bonk 柴犬」。</Dialogue>
-			<HPminus>0.1</HPminus>
-			<Dialogue name="【BOSS】">你丟出那隻柴柴，柴柴使用 Bonk 攻擊，兩人再度發動閃避攻擊，但因閃避不完全，HP -10。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+		<Option name="紅包">
+			<Dialogue name="【通知】" pic="紅包">你選擇使用「紅包」。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">你默默地對著他們打開了紅包的開口，裡面的陰氣使得他們無法抵抗，HP-200。</Dialogue>
+			<CheckHP>End3</CheckHP>
+			<ChangePath name="Boss3">5</ChangePath>
+		</Option>
+		<Option name="戀愛腦的皮諾丘">
+			<Dialogue name="【通知】" pic="戀愛腦的皮諾丘">你選擇使用「戀愛腦的皮諾丘」。</Dialogue>
+			<Dialogue name="【BOSS】">你請出了戀愛腦的皮諾丘，他瘋狂地黏在塑膠大肌肌身上，什麼事也沒有發生。</Dialogue>
+			<HPminusMy>0.5</HPminusMy>
+			<Dialogue name="【BOSS】">武藏與小次郎看到這一幕有些"傻眼"，繞過就纏中的兩人過來個給你一拳，造成(HP-50*2)。</Dialogue>
+			<CheckHP>End3</CheckHP>
+			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
 		<Option name="會尖叫的咖哩拌飯">
 			<Dialogue name="【通知】" pic="會尖叫的咖哩拌飯">你選擇使用「會尖叫的咖哩拌飯」。</Dialogue>
-			<HPminus>0.5</HPminus>
-			<Dialogue name="【BOSS】">你丟出那盒咖哩拌飯，咖哩拌飯發出雹哥的尖叫聲，兩人來不及遮住耳朵，故精神與耳膜受損，HP -50。</Dialogue>
-			<ChangePath name ="Boss3">6</ChangePath>
+			<HPminusBoss>0.6</HPminusBoss>
+			<Dialogue name="【BOSS】">你丟出那盒咖哩拌飯，咖哩拌飯發出雹哥的尖叫聲，兩人來不及摀住耳朵，故精神與耳膜受損，HP-120。</Dialogue>
+			<CheckHP>End3</CheckHP>
+			<Dialogue name="【BOSS】">因為暫時性耳鳴，兩人並未反擊。</Dialogue>
+			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
 	</Boss3>
 
 	<End3>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了對方，大肌肌 Ken 與咖哩拌飯造成了不可逆轉的傷害，武藏與小次郎尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
-		<Background pic = "宿舍"></Background>
+		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
-		<Dialogue name="【成就】">獲得結局「【極度困難版】 結局三」</Dialogue>
-		<Achievement name ="5"></Achievement>
-		<ChangePath name ="GameEndScene">0</ChangePath>
+		<Dialogue name="【成就】">獲得結局「【普通版】 結局三」</Dialogue>
+		<Achievement name="2"></Achievement>
+		<ChangePath name="GameEndScene">0</ChangePath>
 	</End3>
 	<GameEndScene>
-		<ChooseOption></ChooseOption>
 		<Option1 name="回到首頁">
 			<Home></Home>
 		</Option1>
@@ -458,10 +734,10 @@
 			</Option2>
 		</Option2>
 	</GameEndScene>
+
 	<GameoverScene>
-		<Background pic = "全黑">Game Over</Background>
-		<Dialogue name = "【旁白】" pic ="cleanAll">你死了。</Dialogue>
-		<ChooseOption></ChooseOption>
+		<Background pic="全黑">Game Over</Background>
+		<Dialogue name="【通知】">你死了。</Dialogue>
 		<Option1 name="重新開始">
 			<Restart></Restart>
 		</Option1>
