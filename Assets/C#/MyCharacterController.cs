@@ -21,7 +21,6 @@ public class MyCharacterController : MonoBehaviour
         if(picture == "clean")
         {
             character2.sprite = Resources.Load<Sprite>("透明");
-            Debug.Log("角色二透明");
         }
         else if (picture == "cleanAll")
         {
@@ -33,12 +32,10 @@ public class MyCharacterController : MonoBehaviour
             if(picture.Contains("小N"))
             {
                 character1.sprite = Resources.Load<Sprite>(path);
-                Debug.Log("小N");
             }
             else 
             {
                 character2.sprite = Resources.Load<Sprite>(path);
-                Debug.Log("其他");
             }
         }
 

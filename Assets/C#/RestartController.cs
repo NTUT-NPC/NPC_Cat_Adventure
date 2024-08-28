@@ -31,8 +31,8 @@ public class RestartController : MonoBehaviour
     {
         
     }
-    void Restart()
+    void Restart(string[] arr)
     {
         SceneManager.LoadScene(4, LoadSceneMode.Single);
     }
-}//image.DOFade(0.8f, 3f);
+}

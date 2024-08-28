@@ -121,7 +121,7 @@
 		<Option4 name="共同科館">
 			<Dialogue name="【旁白】">你答出了正確答案。</Dialogue>
 			<Dialogue name="【通知】" pic="大肌肌 Ken">獲得隊友——塑膠大肌肌 Ken。</Dialogue>
-			<Dialogue name="【旁白】">於是你與小 N 帶著塑膠製的猛男繼續向下走。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著塑膠製的猛男繼續向下走。</Dialogue>
 			<ChangePath name="Chapter2-3"></ChangePath>
 		</Option4>
 	</Chapter1-2>
@@ -195,10 +195,9 @@
 	</Chapter2-2>
 
 	<book2-1>
-		<Background pic="書"></Background>
+		<Background pic="颱風撞山"></Background>
 		<Dialogue name="【旁白】">凱米颱風生成才三天。</Dialogue>
 		<Dialogue name="【旁白】">就要往我們台灣筆直衝刺。</Dialogue>
-		<Background pic="颱風撞山"></Background>
 		<Dialogue name="【旁白】">就為了騎在台灣那粗大的中央山脈上。</Dialogue>
 		<Dialogue name="【旁白】">我已經預想到了。</Dialogue>
 		<Dialogue name="【凱米】">雜魚❤️雜魚❤️就憑這個雜魚山脈也想要阻止我嗎？</Dialogue>
@@ -208,18 +207,18 @@
 		<Dialogue name="【旁白】">請問玉山多高？</Dialogue>
 		<Option1 name="3952 km">
 			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
-			<ChangePath name="book2-1">10</ChangePath>
+			<ChangePath name="book2-1">9</ChangePath>
 		</Option1>
 		<Option2 name="3952 m">
-			<ChangePath name="book2-2"></ChangePath>
+			<ChangePath name="book2-2">0</ChangePath>
 		</Option2>
 		<Option3 name="3925 m">
 			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
-			<ChangePath name="book2-1">10</ChangePath>
+			<ChangePath name="book2-1">9</ChangePath>
 		</Option3>
 		<Option4 name="3925 km">
 			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
-			<ChangePath name="book2-1">10</ChangePath>
+			<ChangePath name="book2-1">9</ChangePath>
 		</Option4>
 	</book2-1>
 
@@ -236,19 +235,20 @@
 		<Dialogue name="【水怪】">嘿嘿嘿這裡就是我家，答對問題就給你這本書吧~</Dialogue>
 		<Dialogue name="【旁白】">下列吉祥物配對何者正確？</Dialogue>
 		<Option1 name="Docker - 海星">
-			<Dialogue name="【旁白】">雖然你沒有獲得任何東西，但你還是需要繼續前進。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">雖然你沒有獲得任何東西，但你還是需要繼續前進。</Dialogue>
 			<ChangePath name="Chapter3-2"></ChangePath>
 		</Option1>
 		<Option2 name="Linux - 麻雀">
-			<Dialogue name="【旁白】">雖然你沒有獲得任何東西，但你還是需要繼續前進。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">雖然你沒有獲得任何東西，但你還是需要繼續前進。</Dialogue>
 			<ChangePath name="Chapter3-2"></ChangePath>
 		</Option2>
 		<Option3 name="MySQL - 海豚">
 			<Dialogue name="【通知】" pic="寶典秘笈">你獲得了這本寶典秘笈。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">你繼續向前行。</Dialogue>
 			<ChangePath name="Chapter3-2"></ChangePath>
 		</Option3>
 		<Option4 name="Rust - 龍蝦">
-			<Dialogue name="【旁白】">雖然你沒有獲得任何東西，但你還是需要繼續前進。</Dialogue>
+			<Dialogue name="【旁白】" pic="clean">雖然你沒有獲得任何東西，但你還是需要繼續前進。</Dialogue>
 			<ChangePath name="Chapter3-2"></ChangePath>
 		</Option4>
 	</book2-2>
@@ -263,12 +263,12 @@
 		<Background pic="全黑"></Background>
 		<Dialogue name="【旁白】">四周頓時陰風陣陣，在你面前遠方突然一道閃電劃破了天際。</Dialogue>
 		<Dialogue name="【旁白】">你隱約聽到了哭聲。</Dialogue>
-		<Dialogue name="【某哭聲】" pic="皮諾丘">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</Dialogue>
-		<Dialogue name="【皮諾丘】" pic="皮諾丘">大家都知道，如果我說謊，我的鼻子就會變長，若否，則鼻子安然無恙。但如果我說：「我的鼻子要變長了！」，那麼，我的鼻子是會忽長忽短？變長？還是無事發生呢？</Dialogue>
-		<Dialogue name="【皮諾丘】" pic="皮諾丘">他人擔心我說出這句話之後，鼻子忽長忽短，而我會調皮地拿這件事戲弄他人，就將我燒毀了，你們一定要找到事情真相？我是枉死的嗎？</Dialogue>
+		<Dialogue name="【某哭聲】" pic="皮諾丘1">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</Dialogue>
+		<Dialogue name="【皮諾丘】" pic="皮諾丘2">大家都知道，如果我說謊，我的鼻子就會變長，若否，則鼻子安然無恙。但如果我說：「我的鼻子要變長了！」，那麼，我的鼻子是會忽長忽短？變長？還是無事發生呢？</Dialogue>
+		<Dialogue name="【皮諾丘】" pic="皮諾丘1">他人擔心我說出這句話之後，鼻子忽長忽短，而我會調皮地拿這件事戲弄他人，就將我燒毀了，你們一定要找到事情真相？我是枉死的嗎？</Dialogue>
 		<Option1 name="是，你是枉死的，你的鼻子根本不會變長！">
 			<Dialogue name="【旁白】">大肌肌 Ken 答對了問題。</Dialogue>
-			<Dialogue name="【皮諾丘】" pic="皮諾丘">你是電 你是光 你是唯一的神話！你也領了我的紅包，不能說不要跟我結婚！我跟你走~</Dialogue>
+			<Dialogue name="【皮諾丘】" pic="皮諾丘3">你是電 你是光 你是唯一的神話！你也領了我的紅包，不能說不要跟我結婚！我跟你走~</Dialogue>
 			<Dialogue name="【通知】" pic="戀愛腦的皮諾丘">獲得戀愛腦的皮諾丘一位。</Dialogue>
 			<Background pic="繼續前行"></Background>
 			<ChangePath name="Chapter3-3"></ChangePath>
@@ -352,10 +352,8 @@
 		<Background pic="寶箱房間"></Background>
 		<Dialogue name="【旁白】">在使用 localhost 時，請求會被發送到哪裡？</Dialogue>
 		<Option1 name="本地計算機的網絡接口">
-			<Dialogue name="【旁白】">箱子打開後，果然是阿偉要找的一百元，他非常高興地替你們開了門，自己則跑去找彬彬了。</Dialogue>
-			<Dialogue name="【通知】" pic="阿偉的阿罵">獲得阿偉的阿罵。</Dialogue>
-			<Dialogue name="【旁白】">與阿偉道別之後，你們選擇繼續前進。</Dialogue>
-			<ChangePath name="Boss2"></ChangePath>
+			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
+			<ChangePath name="Q3-2-2"></ChangePath>
 		</Option1>
 		<Option2 name="外部伺服器">
 			<Dialogue name="【旁白】">箱子並打不開。</Dialogue>
@@ -383,7 +381,7 @@
 		</Option2>
 		<Option3 name="簡化程式碼，重用父類的屬性和方法">
 			<Dialogue name="【旁白】">箱子打開後，果然是阿偉要找的一百元，他非常高興地替你們開了門，自己則跑去找彬彬了。</Dialogue>
-			<Dialogue name="【通知】" pic="阿偉的阿嬤">獲得阿偉的阿嬤。</Dialogue>
+			<Dialogue name="【通知】" pic="阿偉的阿罵">獲得阿偉的阿罵。</Dialogue>
 			<Dialogue name="【通知】" pic="大香蕉">獲得小禮物「大香蕉」。</Dialogue>
 			<Dialogue name="【旁白】" pic="clean">與阿偉道別之後，你們選擇繼續前進。</Dialogue>
 			<ChangePath name="Boss2"></ChangePath>
@@ -435,7 +433,7 @@
 			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
 			<ChangePath name="Q3-3-2"></ChangePath>
 		</Option3>
-		<Option4 name="在社辦蹭白飯">
+		<Option4 name="王錫福">
 			<Dialogue name="【旁白】">箱子打開後，果然是雹哥的咖哩拌飯，他非常感謝你們，決定將咖哩拌飯送給你們。</Dialogue>
 			<Dialogue name="【通知】" pic="會尖叫的咖哩拌飯">獲得會叫的咖哩拌飯。</Dialogue>
 			<Dialogue name="【旁白】" pic="clean">與雹哥道別之後，你們選擇繼續前進。</Dialogue>
@@ -510,6 +508,7 @@
 	<End1>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了佛地魔，旋轉的魚造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
+		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
 		<Dialogue name="【成就】"> 獲得結局「【普通版】 結局一」</Dialogue>
@@ -565,18 +564,27 @@
 			<CheckHP>End2</CheckHP>
 			<ChangePath name="Boss2">5</ChangePath>
 		</Option>
-		<Option name="阿偉的阿嬤">
-			<Dialogue name="【通知】" pic="阿偉的阿嬤">你選擇使用「阿偉的阿嬤」。</Dialogue>
-			<Dialogue name="【BOSS】">你派出了阿偉的阿嬤當擋箭牌。</Dialogue>
-			<Dialogue name="【阿嬤】">......</Dialogue>
-			<Dialogue name="【阿嬤】">擦欲系（吵死人），你。</Dialogue>
+		<Option name="阿偉的阿罵">
+			<Dialogue name="【通知】" pic="阿偉的阿罵">你選擇使用「阿偉的阿罵」。</Dialogue>
+			<Dialogue name="【BOSS】">你派出了阿偉的阿罵當擋箭牌。</Dialogue>
+			<Dialogue name="【阿罵】">......</Dialogue>
+			<Dialogue name="【阿罵】">擦欲系（吵死人），你。</Dialogue>
 			<HPminusBoss>0.75</HPminusBoss>
-			<Dialogue name="【BOSS】">傑哥被阿嬤突如其來的「教育」擊退數步。HP-150。</Dialogue>
+			<Dialogue name="【BOSS】">傑哥被阿罵突如其來的「教育」擊退數步。HP-150。</Dialogue>
 			<CheckHP>End2</CheckHP>
 			<HPminusMy>0.6</HPminusMy>
-			<Dialogue name="【BOSS】">你被他阿嬤嚇到跌倒受傷，你 HP-120。</Dialogue>
+			<Dialogue name="【BOSS】">你被他阿罵嚇到跌倒受傷，你 HP-120。</Dialogue>
 			<CheckHP>End2</CheckHP>
 			<ChangePath name="Boss2">5</ChangePath>
+		</Option>
+		<Option name="大香蕉">
+			<Dialogue name="【通知】" pic="大香蕉">你選擇使用「大香蕉」。</Dialogue>
+			<Dialogue name="【BOSS】">你丟出那根大香蕉。不知何來的神聖力量，香蕉長了手腳，在他們面前跳起舞。</Dialogue>
+			<Dialogue name="【BOSS】">傑哥看到了那根大香蕉，將其拿起並放到了背後......。</Dialogue>
+			<HPminusBoss>1</HPminusBoss>
+			<Dialogue name="【BOSS】">傑哥露出了舒服的表情，喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
+			<CheckHP>End2</CheckHP>
+			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
 	</Boss2>
 
@@ -640,16 +648,6 @@
 			<Dialogue name="【BOSS】">因為暫時性耳鳴，兩人並未反擊。</Dialogue>
 			<ChangePath name="Boss3">5</ChangePath>
 		</Option>
-		<Option name="大香蕉">
-			<Dialogue name="【通知】" pic="大香蕉">你選擇使用「大香蕉」。</Dialogue>
-			<Dialogue name="【BOSS】">你丟出那根大香蕉。不知何來的神聖力量，香蕉長了手腳，在他們面前跳起舞。</Dialogue>
-			<Dialogue name="【BOSS】">武藏與小次郎被洗腦神曲吸引了，隨著旋律抖動起來。</Dialogue>
-			<HPminusBoss>1</HPminusBoss>
-			<Dialogue name="【BOSS】">武藏與小次郎此時喪失了攻擊能力。你從背後捅了他一下，HP-200。</Dialogue>
-			<CheckHP>End3</CheckHP>
-			<ChangePath name="Boss3">5</ChangePath>
-		</Option>
-		
 	</Boss3>
 
 	<End3>
@@ -679,7 +677,7 @@
 
 	<GameoverScene>
 		<Background pic="全黑">Game Over</Background>
-		<Dialogue name="【通知】" pic="clean">你死了。</Dialogue>
+		<Dialogue name="【通知】">你死了。</Dialogue>
 		<Option1 name="重新開始">
 			<Restart></Restart>
 		</Option1>
