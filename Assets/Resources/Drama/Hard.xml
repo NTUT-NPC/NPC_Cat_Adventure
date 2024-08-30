@@ -175,10 +175,10 @@
 		<Dialogue name="【作者】">此時我正望著窗外的彩虹，將嘴裡的菸拿了下來，吐了一口氣。</Dialogue>
 		<Dialogue name="【作者】">我到底寫了三小。</Dialogue>
 		<Dialogue name="【旁白】">請問他到底寫了三小？</Dialogue>
-		<Option1 name="不知道">
+		<Option2 name="不知道">
 			<Dialogue name="【通知】" pic="寶典秘笈">你獲得了這本寶典秘笈。</Dialogue>
 			<ChangePath name="Chapter3-1"></ChangePath>
-		</Option1>
+		</Option2>
 	</book1-2>
 
 	<Chapter2-2>
@@ -361,10 +361,10 @@
 		<Background pic="普通房間"></Background>
 		<Dialogue name="【阿偉】">來的正好，可以幫我找奶奶藏起來的一百塊嗎？我想偷偷拿去跟彬彬打遊戲。不要跟我奶奶說喔！我再送你們一個小禮物。</Dialogue>
 		<Dialogue name="【旁白】">你願意幫阿偉開箱找錢嗎？</Dialogue>
-		<Option1 name="願意">
+		<Option2 name="願意">
 			<Dialogue name="【旁白】">你們決定幫阿偉尋找一百元，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</Dialogue>
 			<ChangePath name="Chapter3-2-1"></ChangePath>
-		</Option1>
+		</Option2>
 	</Chapter3-2>
 	
 	<Chapter3-2-1>
