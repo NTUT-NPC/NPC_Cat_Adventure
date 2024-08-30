@@ -126,6 +126,6 @@ public class DifficultyController : MonoBehaviour
     }
     public void PressGitHubButton()
     {
-        Application.OpenURL("https://github.com/itaouo/NPC_Cat_Adventure");
+        Application.OpenURL("https://github.com/NTUT-NPC/NPC_Cat_Adventure");
     }
 }
