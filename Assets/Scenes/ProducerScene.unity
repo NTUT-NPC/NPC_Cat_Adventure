@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -594,8 +593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -23}
-  m_SizeDelta: {x: 580, y: 461.2791}
+  m_AnchoredPosition: {x: -450, y: 0}
+  m_SizeDelta: {x: 580, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014327122
 MonoBehaviour:
@@ -630,9 +629,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "7th rita_ouo \u958B\u767C\u904A\u6232\n7th \u310C \u3128 \u3128 \u7D20\u6750\u63D0\u4F9B\n7th
-    \u624B\u6A5F\u6C92\u6CB9 \u6545\u4E8B\u64B0\u5BEB\n7th riley \u8A2D\u8A08\u554F\u984C\n7th
-    syuaweu \u3001 \u6E21\u9D09 \u9F0E\u529B\u76F8\u52A9"
+  m_Text: "RPG 1.0\n7th rita_ouo \u958B\u767C\u904A\u6232\n7th \u310C \u3128 \u3128
+    \u7D20\u6750\u63D0\u4F9B\n7th \u624B\u6A5F\u6C92\u6CB9 \u6545\u4E8B\u64B0\u5BEB\n7th
+    riley \u8A2D\u8A08\u554F\u984C\n7th syuaweu \u3001 \u6E21\u9D09 \u9F0E\u529B\u76F8\u52A9"
 --- !u!222 &1014327123
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -733,6 +732,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1926283190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926283191}
+  - component: {fileID: 1926283193}
+  - component: {fileID: 1926283192}
+  m_Layer: 5
+  m_Name: Text3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1926283191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926283190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2090151507}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 450, y: 0}
+  m_SizeDelta: {x: 580, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1926283192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926283190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 7ee8550fabf448c4fb15e0270f95a6e3, type: 3}
+    m_FontSize: 64
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 72
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "RPG 2.0\n8th ??? \u3001 Brad Chen \u958B\u767C\u904A\u6232\n8th \u8C93\u8C93\u541B
+    \u7D20\u6750\u63D0\u4F9B\n8th Little Penguin \u6545\u4E8B\u64B0\u5BEB\n8th kEVIN
+    \u8A2D\u8A08\u554F\u984C\n8th easn \u9F0E\u529B\u76F8\u52A9"
+--- !u!222 &1926283193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926283190}
+  m_CullTransparentMesh: 1
 --- !u!1 &2040146475
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +998,7 @@ RectTransform:
   - {fileID: 2040146476}
   - {fileID: 26758970}
   - {fileID: 1014327121}
+  - {fileID: 1926283191}
   - {fileID: 579104129}
   - {fileID: 252050970}
   m_Father: {fileID: 0}
