@@ -6,7 +6,7 @@
 		<Dialogue name="【旁白】">突然踩到了工人沒有收拾好的東西，摔了一跤之後跌入人孔蓋裡面。</Dialogue>
 		<Dialogue name="【通知】" pic="一支火把">獲得一支火把。</Dialogue>
 		<Background pic="水道"></Background>
-		<Dialogue name="【旁白】">小 N 點亮火把，沿著管道往下爬，遇上了兩個通往不同方向的水道。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">小 N 點亮火把，沿著管道往下爬，遇上了兩個通往不同方向的水道。</Dialogue>
 		<Dialogue name="【旁白】">一個水道是清澈見底的，另一個水道上面佈滿了七彩的油墨，請問你會選擇哪一邊？</Dialogue>
 		<Option1 name="七彩油墨的水道">
 			<Background pic="七彩油墨">Skip Animation</Background>
@@ -33,31 +33,31 @@
 		<Option1 name="凱米">
 			<Dialogue name="【旁白】">正確！看來颱風假沒少放！</Dialogue>
 			<Dialogue name="【通知】" pic="暴風圈">獲得暴風圈。</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著暴風圈繼續向下走。</Dialogue>
+			<Dialogue name="【旁白】">於是你與小 N 帶著暴風圈繼續向下走。</Dialogue>
 			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option1>
 		<Option2 name="杜蘇芮">
 			<Dialogue name="【旁白】">海葵為 2023 第一個登陸的颱風，杜蘇芮為 2023 年第一個颱風但未登陸，蘇迪勒颱風為 2015 年的颱風。</Dialogue>
 			<Dialogue name="【通知】" pic="颱風眼">獲得颱風眼。</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
+			<Dialogue name="【旁白】">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
 			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option2>
 		<Option3 name="海葵">
 			<Dialogue name="【旁白】">海葵為 2023 第一個登陸的颱風，杜蘇芮為 2023 年第一個颱風但未登陸，蘇迪勒颱風為 2015 年的颱風。</Dialogue>
 			<Dialogue name="【通知】" pic="颱風眼">獲得颱風眼。</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
+			<Dialogue name="【旁白】">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
 			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option3>
 		<Option4 name="蘇迪勒">
 			<Dialogue name="【旁白】">海葵為 2023 第一個登陸的颱風，杜蘇芮為 2023 年第一個颱風但未登陸，蘇迪勒颱風為 2015 年的颱風。</Dialogue>
 			<Dialogue name="【通知】" pic="颱風眼">獲得颱風眼。</Dialogue>
-			<Dialogue name="【旁白】" pic="clean">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
+			<Dialogue name="【旁白】">於是你與小 N 帶著颱風眼繼續往下走。</Dialogue>
 			<ChangePath name="Chapter1-1-2"></ChangePath>
 		</Option4>
 	</Chapter1-1>
 
 	<Chapter1-1-2>
-		<Background pic="黑色房間"></Background>
+		<Background pic="淋浴間"></Background>
 		<Dialogue name="【旁白】">對答完了後，水怪帶著我們來到淋浴間。</Dialogue>
 		<Dialogue name="【旁白】">看著正常的淋浴間，實則藏著深不可測的陷阱。</Dialogue>
 		<Dialogue name="【旁白】" pic="尼斯湖水怪2">水龍頭噴出來的，不是水，而是42號混凝土，伴隨著一點一氧化碳。</Dialogue>
@@ -66,13 +66,13 @@
 		<Dialogue name="【小 N】">我們這樣拌在一起吃，是不是可以吃到美味的土雞蛋啊（下嚥）</Dialogue>
 		<Dialogue name="【我】">啊啊啊啊啊不可以啊那是水泥！！</Dialogue>
 		<Dialogue name="【旁白】">水泥中的矽酸鹽與雞蛋中的蛋白質產生化學反應，小 N 食用過多，目前已經一肚子火。</Dialogue>
-		<Dialogue name="【旁白】">（小 N 已石化，化學反應導致熱脹冷縮，小 N 的外殼上布滿裂痕）</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_石化">（小 N 已石化，化學反應導致熱脹冷縮，小 N 的外殼上布滿裂痕）</Dialogue>
 		<Dialogue name="【尼斯湖水怪】">過我這關才沒有那麼簡單呢~~~~~~</Dialogue>
 		<Dialogue name="【旁白】">如果你要拯救小 N ，你會選擇何種方式？</Dialogue>
 		<Option1 name="哈姆立克法">
 			<Dialogue name="【旁白】">你使用了哈姆立克法，戳中了裂痕的交會處。</Dialogue>
 			<Dialogue name="【旁白】">（轟）</Dialogue>
-			<Dialogue name="【旁白】">（你把小 N 滿肚子的火發洩了出來。小 N 被解救了）</Dialogue>
+			<Dialogue name="【旁白】" pic="小N_冒火">（你把小 N 滿肚子的火發洩了出來。小 N 被解救了）</Dialogue>
 			<Dialogue name="【旁白】" pic="尼斯湖水怪3">尼斯湖水怪被你的創舉燒死了！</Dialogue>
 			<Dialogue name="【通知】" pic="尼斯湖水怪的精髓">獲得尼斯湖水怪的精髓。</Dialogue>
 			<Dialogue name="【旁白】" pic="clean">於是你與小 N 成功過了這關。</Dialogue>
@@ -83,13 +83,13 @@
 			<Dialogue name="【旁白】">水加劇了熱漲冷縮的效應。</Dialogue>
 			<Dialogue name="【旁白】">（碎裂）</Dialogue>
 			<Dialogue name="【旁白】">（水把火滅了）</Dialogue>
-			<Dialogue name="【旁白】">水泥碎裂，一切都沒發生，小 N 變回了原狀。</Dialogue>
+			<Dialogue name="【旁白】" pic="小N_似乎在對話">水泥碎裂，一切都沒發生，小 N 變回了原狀。</Dialogue>
 			<Dialogue name="【通知】" pic="水泥碎片">獲得水泥碎片。</Dialogue>
 			<Dialogue name="【旁白】" pic="clean">好啦看在你那麼機智的份上，我就暫時放了你們兩個吧！</Dialogue>
 			<ChangePath name="Chapter2-2"></ChangePath>
 		</Option2>
 		<Option3 name="激將法">
-			<Dialogue name="【旁白】">（小 N 炸開，變為人型）</Dialogue>
+			<Dialogue name="【旁白】" pic="小N_人形">（小 N 炸開，變為人型）</Dialogue>
 			<Dialogue name="【小 N】">沒想到你居然敢跟我槓架！我都已經燒成這樣了你忍心嗎！！</Dialogue>
 			<Dialogue name="【旁白】" pic="clean">（小 N 招來了凱米颱風，你被颱風捲走了）</Dialogue>
 			<ChangePath name="GameoverScene"></ChangePath>
@@ -128,7 +128,7 @@
 
 	<Chapter2-1>
 		<Background pic="湖"></Background>
-		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
 		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
 		<Option1 name="要">
 			<ChangePath name="book1-1"></ChangePath>
@@ -139,10 +139,9 @@
 	</Chapter2-1>
 
 	<book1-1>
-		<Background pic="書"></Background>
+		<Background pic="颱風撞山"></Background>
 		<Dialogue name="【旁白】">凱米颱風生成才三天。</Dialogue>
 		<Dialogue name="【旁白】">就要往我們台灣筆直衝刺。</Dialogue>
-		<Background pic="颱風撞山"></Background>
 		<Dialogue name="【旁白】">就為了騎在台灣那粗大的中央山脈上。</Dialogue>
 		<Dialogue name="【旁白】">我已經預想到了。</Dialogue>
 		<Dialogue name="【凱米】">雜魚❤️雜魚❤️就憑這個雜魚山脈也想要阻止我嗎？</Dialogue>
@@ -152,18 +151,18 @@
 		<Dialogue name="【旁白】">請問玉山多高？</Dialogue>
 		<Option1 name="3952 km">
 			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
-			<ChangePath name="book1-1">10</ChangePath>
+			<ChangePath name="book1-1">9</ChangePath>
 		</Option1>
 		<Option2 name="3952 m">
 			<ChangePath name="book1-2"></ChangePath>
 		</Option2>
 		<Option3 name="3925 m">
 			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
-			<ChangePath name="book1-1">10</ChangePath>
+			<ChangePath name="book1-1">9</ChangePath>
 		</Option3>
 		<Option4 name="3925 km">
 			<Dialogue name="【旁白】">居然不知道玉山多高？給我重選！</Dialogue>
-			<ChangePath name="book1-1">10</ChangePath>
+			<ChangePath name="book1-1">9</ChangePath>
 		</Option4>
 	</book1-1>
 
@@ -184,7 +183,7 @@
 
 	<Chapter2-2>
 		<Background pic="湖"></Background>
-		<Dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">脫離了尼斯湖水怪之後，你轉身來到了一個池塘。</Dialogue>
 		<Dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書，你要閱讀嗎。</Dialogue>
 		<Option1 name="要">
 			<ChangePath name="book2-1"></ChangePath>
@@ -403,11 +402,11 @@
 		<Dialogue name="【旁白】">在程式設計研究社裡面可以做哪些事？</Dialogue>
 		<Option1 name="出公差">
 			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
-			<ChangePath name="Chapter3-3">5</ChangePath>
+			<ChangePath name="Chapter3-3">7</ChangePath>
 		</Option1>
 		<Option2 name="去中正館表演">
 			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
-			<ChangePath name="Chapter3-3">5</ChangePath>
+			<ChangePath name="Chapter3-3">7</ChangePath>
 		</Option2>
 		<Option3 name="參加 GDSC 活動">
 			<Dialogue name="【旁白】">你成功打開了第一道鎖，但還有第二道鎖要開呢！嘻嘻！</Dialogue>
@@ -415,7 +414,7 @@
 		</Option3>
 		<Option4 name="在社辦蹭白飯">
 			<Dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</Dialogue>
-			<ChangePath name="Chapter3-3">5</ChangePath>
+			<ChangePath name="Chapter3-3">7</ChangePath>
 		</Option4>
 	</Chapter3-3>
 
@@ -507,7 +506,7 @@
 
 	<End1>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了佛地魔，旋轉的魚造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
-		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
 		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
@@ -590,7 +589,7 @@
 
 	<End2>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了傑哥，阿偉的阿罵造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
-		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
 		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
@@ -652,7 +651,7 @@
 
 	<End3>
 		<Dialogue name="【旁白】" pic="clean">你們成功打敗了對方，大肌肌 Ken 與咖哩拌飯造成了不可逆轉的傷害，武藏與小次郎尖叫一聲消散於無。</Dialogue>
-		<Dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
+		<Dialogue name="【旁白】" pic="小N_似乎在對話">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
 		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
 		<Dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</Dialogue>
@@ -677,7 +676,7 @@
 
 	<GameoverScene>
 		<Background pic="全黑">Game Over</Background>
-		<Dialogue name="【通知】">你死了。</Dialogue>
+		<Dialogue name="【旁白】" pic="cleanAll">你死了。</Dialogue>
 		<Option1 name="重新開始">
 			<Restart></Restart>
 		</Option1>
