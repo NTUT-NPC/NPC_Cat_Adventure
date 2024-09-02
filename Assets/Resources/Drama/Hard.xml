@@ -565,7 +565,7 @@
 	</ShieldStory>
 
 	<End1>
-		<Dialogue name="【旁白】" pic="clean">你們成功打敗了佛地魔，旋轉的魚造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
+		<Dialogue name="【旁白】" pic="clean">你們成功打敗了佛地魔，你對佛地魔使出了致命的一擊，他尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】" pic="小N_似乎在對話">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
 		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
@@ -648,7 +648,7 @@
 	</Boss2>
 
 	<End2>
-		<Dialogue name="【旁白】" pic="clean">你們成功打敗了傑哥，阿偉的阿罵造成了不可逆轉的傷害，他尖叫一聲消散於無。</Dialogue>
+		<Dialogue name="【旁白】" pic="clean">你們成功打敗了傑哥，你對傑哥使出了致命的一擊，他尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】" pic="小N_似乎在對話">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
 		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
@@ -710,7 +710,7 @@
 	</Boss3>
 
 	<End3>
-		<Dialogue name="【旁白】" pic="clean">你們成功打敗了對方，大肌肌 Ken 與咖哩拌飯造成了不可逆轉的傷害，武藏與小次郎尖叫一聲消散於無。</Dialogue>
+		<Dialogue name="【旁白】" pic="clean">你們成功打敗了武藏與小次郎，你對武藏與小次郎使出了致命的一擊，武藏與小次郎尖叫一聲消散於無。</Dialogue>
 		<Dialogue name="【旁白】" pic="小N_似乎在對話">前方出現一扇門，你們迫不急待地打開它。</Dialogue>
 		<Background pic="宿舍"></Background>
 		<Dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</Dialogue>
